@@ -586,6 +586,17 @@
     observer.observe(document.getElementById('sentinel'));
   });
 
+  // PC版テーブル内のスクロール検知を追加
+  document.getElementById('tableView').addEventListener('scroll', function() {
+    // テーブルの下端まで残り200pxに近づいたら追加読み込み
+    if (this.scrollHeight - this.scrollTop - this.clientHeight < 200) {
+      if (displayLimit < state.filteredRows.length) {
+        displayLimit += INCREMENT;
+        renderChunk(false);
+      }
+    }
+  });
+
   // トップへ戻るボタン
   window.onscroll = function() {
     const btn = document.getElementById('scrollToTop');
