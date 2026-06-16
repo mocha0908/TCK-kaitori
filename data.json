@@ -9,11 +9,11 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/gD28pgFNAqPfjeHRlrrpVwM2eMXSR5VZnpYJI82z.png",
       "is_ask": false,
-      "price_max": "¥11,500",
+      "price_max": "¥10,350",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥11,500",
-      "sort_price": 11500
+      "price_after": "¥10,350",
+      "sort_price": 10350
     },
     {
       "status": "掲載",
@@ -23,11 +23,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/fa7467a1-9e85-4ff7-90e8-d96677ce368f.png",
       "is_ask": false,
-      "price_max": "¥11,000",
+      "price_max": "¥9,900",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥11,000",
-      "sort_price": 11000
+      "price_after": "¥9,900",
+      "sort_price": 9900
     },
     {
       "status": "無効",
@@ -37,11 +37,11 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/ZxXFmPXnlk03JxS2zs91tZ0YGFO5xIOCHs6b4utG.png",
       "is_ask": false,
-      "price_max": "¥8,000",
+      "price_max": "¥7,200",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥8,000",
-      "sort_price": 8000
+      "price_after": "¥7,200",
+      "sort_price": 7200
     },
     {
       "status": "掲載",
@@ -51,11 +51,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/7f53de36-f70c-41ae-834d-d0d1e95da47c.png",
       "is_ask": false,
-      "price_max": "¥8,500",
+      "price_max": "¥7,650",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥8,500",
-      "sort_price": 8500
+      "price_after": "¥7,650",
+      "sort_price": 7650
     },
     {
       "status": "無効",
@@ -65,11 +65,11 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/CR6i8BBA8KSdCDb6XzsJIknWE3Dw2ljhEg7F62LE.png",
       "is_ask": false,
-      "price_max": "¥7,000",
+      "price_max": "¥6,300",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥7,000",
-      "sort_price": 7000
+      "price_after": "¥6,300",
+      "sort_price": 6300
     },
     {
       "status": "掲載",
@@ -79,11 +79,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/f8660d10-f9a8-4141-85c0-7c754fbccb0a.png",
       "is_ask": false,
-      "price_max": "¥14,500",
+      "price_max": "¥13,050",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥14,500",
-      "sort_price": 14500
+      "price_after": "¥13,050",
+      "sort_price": 13050
     },
     {
       "status": "無効",
@@ -93,11 +93,11 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/yGju5hY8PMyuVdqnfdOIAIoXajz3qtjMguPJfSCJ.png",
       "is_ask": false,
-      "price_max": "¥10,000",
+      "price_max": "¥9,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥10,000",
-      "sort_price": 10000
+      "price_after": "¥9,000",
+      "sort_price": 9000
     },
     {
       "status": "掲載",
@@ -107,11 +107,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/761c1ee3-c079-475e-8c92-5494dea84b53.png",
       "is_ask": false,
-      "price_max": "¥22,000",
+      "price_max": "¥19,800",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥22,000",
-      "sort_price": 22000
+      "price_after": "¥19,800",
+      "sort_price": 19800
     },
     {
       "status": "無効",
@@ -121,11 +121,11 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/Inxo6aIZ5o7sS5FaO0Y2p65zX1QJ2t3bYNi7bbs7.png",
       "is_ask": false,
-      "price_max": "¥18,000",
+      "price_max": "¥16,200",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥18,000",
-      "sort_price": 18000
+      "price_after": "¥16,200",
+      "sort_price": 16200
     },
     {
       "status": "掲載",
@@ -135,11 +135,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/ba5e77be-ff21-4e0d-88f2-b23858491e3b.jpg",
       "is_ask": false,
-      "price_max": "¥11,500",
+      "price_max": "¥10,350",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥11,500",
-      "sort_price": 11500
+      "price_after": "¥10,350",
+      "sort_price": 10350
     },
     {
       "status": "無効",
@@ -149,11 +149,11 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/zrmWZwHGGL0mun7FWMLLaih5HgIeWue1Rpxg9B4q.jpg",
       "is_ask": false,
-      "price_max": "¥8,000",
+      "price_max": "¥7,200",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥8,000",
-      "sort_price": 8000
+      "price_after": "¥7,200",
+      "sort_price": 7200
     },
     {
       "status": "掲載",
@@ -163,11 +163,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/ebda3235-6e88-4fdd-909e-4ec459f448bd.jpg",
       "is_ask": false,
-      "price_max": "¥10,000",
+      "price_max": "¥9,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥10,000",
-      "sort_price": 10000
+      "price_after": "¥9,000",
+      "sort_price": 9000
     },
     {
       "status": "無効",
@@ -177,11 +177,11 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/gw2THlrEi4CHpW8a88UuxzbsF2tOe6VAmDZbvMDe.jpg",
       "is_ask": false,
-      "price_max": "¥7,000",
+      "price_max": "¥6,300",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥7,000",
-      "sort_price": 7000
+      "price_after": "¥6,300",
+      "sort_price": 6300
     },
     {
       "status": "掲載",
@@ -191,11 +191,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/12c63d6d-e95e-4ceb-8cf9-d9ec2dd45590.jpg",
       "is_ask": false,
-      "price_max": "¥20,000",
+      "price_max": "¥18,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥20,000",
-      "sort_price": 20000
+      "price_after": "¥18,000",
+      "sort_price": 18000
     },
     {
       "status": "掲載",
@@ -205,11 +205,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/57898e88-34c7-4120-b8f3-f2e86dc09be7.jpg",
       "is_ask": false,
-      "price_max": "¥10,300",
+      "price_max": "¥9,270",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥10,300",
-      "sort_price": 10300
+      "price_after": "¥9,270",
+      "sort_price": 9270
     },
     {
       "status": "無効",
@@ -219,11 +219,11 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/jaPCWBBIlrOd3z0VplwC7BCLAQuQWi1yEB0qS8PA.png",
       "is_ask": false,
-      "price_max": "¥8,000",
+      "price_max": "¥7,200",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥8,000",
-      "sort_price": 8000
+      "price_after": "¥7,200",
+      "sort_price": 7200
     },
     {
       "status": "掲載",
@@ -233,11 +233,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/66d66e7f-928b-4ba4-b382-9546f2e2d712.jpg",
       "is_ask": false,
-      "price_max": "¥31,500",
+      "price_max": "¥28,350",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥31,500",
-      "sort_price": 31500
+      "price_after": "¥28,350",
+      "sort_price": 28350
     },
     {
       "status": "掲載",
@@ -247,11 +247,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/087411e6-effd-4051-9e96-ba05fc92d79b.jpg",
       "is_ask": false,
-      "price_max": "¥15,000",
+      "price_max": "¥13,500",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥15,000",
-      "sort_price": 15000
+      "price_after": "¥13,500",
+      "sort_price": 13500
     },
     {
       "status": "掲載",
@@ -261,11 +261,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/c566b4b8-d9ad-4627-9075-272e0b97481c.jpg",
       "is_ask": false,
-      "price_max": "¥11,000",
+      "price_max": "¥9,900",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥11,000",
-      "sort_price": 11000
+      "price_after": "¥9,900",
+      "sort_price": 9900
     },
     {
       "status": "掲載",
@@ -275,11 +275,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/3d293f97-a6ca-4f10-9048-9930cbfc9601.jpg",
       "is_ask": false,
-      "price_max": "¥10,500",
+      "price_max": "¥9,450",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥10,500",
-      "sort_price": 10500
+      "price_after": "¥9,450",
+      "sort_price": 9450
     },
     {
       "status": "掲載",
@@ -289,11 +289,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/f65a060d-6c57-4bb9-8744-4bb0a4f1ea58.jpg",
       "is_ask": false,
-      "price_max": "¥12,000",
+      "price_max": "¥10,800",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥12,000",
-      "sort_price": 12000
+      "price_after": "¥10,800",
+      "sort_price": 10800
     },
     {
       "status": "掲載",
@@ -303,11 +303,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/b51826e1-7776-4837-907a-747a9b16a7a4.jpg",
       "is_ask": false,
-      "price_max": "¥13,000",
+      "price_max": "¥11,700",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥13,000",
-      "sort_price": 13000
+      "price_after": "¥11,700",
+      "sort_price": 11700
     },
     {
       "status": "掲載",
@@ -317,11 +317,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/e4411192-be7a-4ea5-a580-b632d6f419d4.jpg",
       "is_ask": false,
-      "price_max": "¥16,000",
+      "price_max": "¥14,400",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥16,000",
-      "sort_price": 16000
+      "price_after": "¥14,400",
+      "sort_price": 14400
     },
     {
       "status": "掲載",
@@ -331,11 +331,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/f1162542-711a-4d8b-879c-367d52135dd7.jpg",
       "is_ask": false,
-      "price_max": "¥18,000",
+      "price_max": "¥16,200",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥18,000",
-      "sort_price": 18000
+      "price_after": "¥16,200",
+      "sort_price": 16200
     },
     {
       "status": "掲載",
@@ -345,11 +345,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/06716c85-802d-410f-8390-f94a62c646fc.jpg",
       "is_ask": false,
-      "price_max": "¥12,500",
+      "price_max": "¥11,250",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥12,500",
-      "sort_price": 12500
+      "price_after": "¥11,250",
+      "sort_price": 11250
     },
     {
       "status": "掲載",
@@ -359,11 +359,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/3b77fbe8-95c5-41dc-922f-ea62454c548d.jpg",
       "is_ask": false,
-      "price_max": "¥12,000",
+      "price_max": "¥10,800",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥12,000",
-      "sort_price": 12000
+      "price_after": "¥10,800",
+      "sort_price": 10800
     },
     {
       "status": "掲載",
@@ -373,11 +373,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/04906148-756f-4b2f-aff2-a24f9626dbd4.jpg",
       "is_ask": false,
-      "price_max": "¥18,000",
+      "price_max": "¥16,200",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥18,000",
-      "sort_price": 18000
+      "price_after": "¥16,200",
+      "sort_price": 16200
     },
     {
       "status": "掲載",
@@ -387,11 +387,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/4aeb0bee-780a-489b-906b-9fdf4b7c076e.jpg",
       "is_ask": false,
-      "price_max": "¥10,000",
+      "price_max": "¥9,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥10,000",
-      "sort_price": 10000
+      "price_after": "¥9,000",
+      "sort_price": 9000
     },
     {
       "status": "掲載",
@@ -401,11 +401,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/9af35ee0-11ff-4305-9399-a04380542370.jpg",
       "is_ask": false,
-      "price_max": "¥13,000",
+      "price_max": "¥11,700",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥13,000",
-      "sort_price": 13000
+      "price_after": "¥11,700",
+      "sort_price": 11700
     },
     {
       "status": "掲載",
@@ -415,11 +415,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/cd634768-1050-456c-a7df-36acd0a5ecd9.jpg",
       "is_ask": false,
-      "price_max": "¥28,000",
+      "price_max": "¥25,200",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥28,000",
-      "sort_price": 28000
+      "price_after": "¥25,200",
+      "sort_price": 25200
     },
     {
       "status": "掲載",
@@ -429,11 +429,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/a2c2817d-da29-45f4-b0b8-da479f8e16ec.jpg",
       "is_ask": false,
-      "price_max": "¥35,000",
+      "price_max": "¥31,500",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥35,000",
-      "sort_price": 35000
+      "price_after": "¥31,500",
+      "sort_price": 31500
     },
     {
       "status": "掲載",
@@ -443,11 +443,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/c7bb3596-9b4b-4e92-911d-2cc40b908c32.jpg",
       "is_ask": false,
-      "price_max": "¥320,000",
+      "price_max": "¥288,000",
       "price_limit": "5",
       "price_reduce": "-",
-      "price_after": "¥320,000",
-      "sort_price": 320000
+      "price_after": "¥288,000",
+      "sort_price": 288000
     },
     {
       "status": "掲載",
@@ -457,11 +457,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/ee638230-694d-474f-8dfa-2b9fb92d0931.jpg",
       "is_ask": false,
-      "price_max": "¥150,000",
+      "price_max": "¥135,000",
       "price_limit": "20",
       "price_reduce": "-",
-      "price_after": "¥150,000",
-      "sort_price": 150000
+      "price_after": "¥135,000",
+      "sort_price": 135000
     },
     {
       "status": "無効",
@@ -471,11 +471,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/80bcc699-18ff-4493-9c36-8531a4bd6b1d.png",
       "is_ask": false,
-      "price_max": "¥22,000",
+      "price_max": "¥19,800",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥22,000",
-      "sort_price": 22000
+      "price_after": "¥19,800",
+      "sort_price": 19800
     },
     {
       "status": "掲載",
@@ -485,11 +485,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/e4d2b4ad-f296-4c64-99d4-b7baf7c2b1e7.png",
       "is_ask": false,
-      "price_max": "¥190,000",
+      "price_max": "¥171,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥190,000",
-      "sort_price": 190000
+      "price_after": "¥171,000",
+      "sort_price": 171000
     },
     {
       "status": "掲載",
@@ -499,11 +499,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/e6591b29-7862-4bbc-ad7d-4369cf6c7274.jpg",
       "is_ask": false,
-      "price_max": "¥160,000",
+      "price_max": "¥144,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥160,000",
-      "sort_price": 160000
+      "price_after": "¥144,000",
+      "sort_price": 144000
     },
     {
       "status": "掲載",
@@ -513,11 +513,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/acb2d57d-c9cb-44ad-8213-8f4b4e6a31fa.png",
       "is_ask": false,
-      "price_max": "¥440,000",
+      "price_max": "¥396,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥440,000",
-      "sort_price": 440000
+      "price_after": "¥396,000",
+      "sort_price": 396000
     },
     {
       "status": "掲載",
@@ -527,11 +527,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/00d61fa9-6123-4757-bfdd-97f4ca8a0075.jpg",
       "is_ask": false,
-      "price_max": "¥4,000",
+      "price_max": "¥3,600",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥4,000",
-      "sort_price": 4000
+      "price_after": "¥3,600",
+      "sort_price": 3600
     },
     {
       "status": "掲載",
@@ -541,11 +541,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/union_arena/fb0e1a4b-aa9b-485f-80cf-5f3bc2433777.png",
       "is_ask": false,
-      "price_max": "¥27,200",
+      "price_max": "¥24,480",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥27,200",
-      "sort_price": 27200
+      "price_after": "¥24,480",
+      "sort_price": 24480
     },
     {
       "status": "掲載",
@@ -555,11 +555,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/yugioh/ee960fb4-069b-4059-8e8d-7eb4b753c51c.jpg",
       "is_ask": false,
-      "price_max": "¥8,700",
+      "price_max": "¥7,830",
       "price_limit": "300",
       "price_reduce": "-",
-      "price_after": "¥8,700",
-      "sort_price": 8700
+      "price_after": "¥7,830",
+      "sort_price": 7830
     },
     {
       "status": "掲載",
@@ -569,11 +569,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/yugioh/e50b8e2c-0cc9-43b0-be22-333ef543693a.jpg",
       "is_ask": false,
-      "price_max": "¥5,800",
+      "price_max": "¥5,220",
       "price_limit": "300",
       "price_reduce": "-",
-      "price_after": "¥5,800",
-      "sort_price": 5800
+      "price_after": "¥5,220",
+      "sort_price": 5220
     },
     {
       "status": "掲載",
@@ -583,11 +583,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/yugioh/e50d56f6-5fd9-4b47-8f05-51cd7b69da9a.jpg",
       "is_ask": false,
-      "price_max": "¥4,400",
+      "price_max": "¥3,960",
       "price_limit": "300",
       "price_reduce": "-",
-      "price_after": "¥4,400",
-      "sort_price": 4400
+      "price_after": "¥3,960",
+      "sort_price": 3960
     },
     {
       "status": "掲載",
@@ -597,11 +597,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/4913ca86-f72e-43f9-bd65-12b49d1d0aed.jpg",
       "is_ask": false,
-      "price_max": "¥7,000",
+      "price_max": "¥6,300",
       "price_limit": "100",
       "price_reduce": "15%",
-      "price_after": "¥5,950",
-      "sort_price": 7000
+      "price_after": "¥5,355",
+      "sort_price": 6300
     },
     {
       "status": "掲載",
@@ -611,11 +611,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/9de73d24-130a-48b6-bf70-22274ebc354a.jpg",
       "is_ask": false,
-      "price_max": "¥6,800",
+      "price_max": "¥6,120",
       "price_limit": "100",
       "price_reduce": "15%",
-      "price_after": "¥5,780",
-      "sort_price": 6800
+      "price_after": "¥5,202",
+      "sort_price": 6120
     },
     {
       "status": "掲載",
@@ -625,11 +625,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/eb45ef68-bf6b-4732-a5ad-2c3e867f54a2.jpg",
       "is_ask": false,
-      "price_max": "¥5,200",
+      "price_max": "¥4,680",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥4,420",
-      "sort_price": 5200
+      "price_after": "¥3,978",
+      "sort_price": 4680
     },
     {
       "status": "掲載",
@@ -639,11 +639,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/597eebd7-733b-4025-9cc4-d07cf5e97e8a.jpg",
       "is_ask": false,
-      "price_max": "¥5,800",
+      "price_max": "¥5,220",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥4,930",
-      "sort_price": 5800
+      "price_after": "¥4,437",
+      "sort_price": 5220
     },
     {
       "status": "掲載",
@@ -653,11 +653,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/09059578-6bc2-4b5e-8dd4-02b5c1bb2616.jpg",
       "is_ask": false,
-      "price_max": "¥6,100",
+      "price_max": "¥5,490",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥5,185",
-      "sort_price": 6100
+      "price_after": "¥4,667",
+      "sort_price": 5490
     },
     {
       "status": "掲載",
@@ -667,11 +667,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/6c9ce21a-1010-434f-9788-b6dff89e6ac0.jpg",
       "is_ask": false,
-      "price_max": "¥4,800",
+      "price_max": "¥4,320",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥4,080",
-      "sort_price": 4800
+      "price_after": "¥3,672",
+      "sort_price": 4320
     },
     {
       "status": "掲載",
@@ -681,11 +681,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/fe0609c2-9be7-48d7-966d-321bfd75110e.jpg",
       "is_ask": false,
-      "price_max": "¥5,500",
+      "price_max": "¥4,950",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥4,675",
-      "sort_price": 5500
+      "price_after": "¥4,208",
+      "sort_price": 4950
     },
     {
       "status": "掲載",
@@ -695,11 +695,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/988ff97f-238b-4037-a740-a342b623144e.jpg",
       "is_ask": false,
-      "price_max": "¥8,500",
+      "price_max": "¥7,650",
       "price_limit": "100",
       "price_reduce": "15%",
-      "price_after": "¥7,225",
-      "sort_price": 8500
+      "price_after": "¥6,503",
+      "sort_price": 7650
     },
     {
       "status": "掲載",
@@ -709,11 +709,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/f2178fd6-f0d4-4685-b523-a2ef5ffd08b9.jpg",
       "is_ask": false,
-      "price_max": "¥5,200",
+      "price_max": "¥4,680",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥4,420",
-      "sort_price": 5200
+      "price_after": "¥3,978",
+      "sort_price": 4680
     },
     {
       "status": "掲載",
@@ -723,11 +723,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/ac2fd0e4-2408-46c1-ac92-137c3ad363d1.jpg",
       "is_ask": false,
-      "price_max": "¥5,700",
+      "price_max": "¥5,130",
       "price_limit": "100",
       "price_reduce": "15%",
-      "price_after": "¥4,845",
-      "sort_price": 5700
+      "price_after": "¥4,361",
+      "sort_price": 5130
     },
     {
       "status": "掲載",
@@ -737,11 +737,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/c0b39a5f-3ad7-4057-aea4-e7be221d37a0.png",
       "is_ask": false,
-      "price_max": "¥4,800",
+      "price_max": "¥4,320",
       "price_limit": "60",
       "price_reduce": "15%",
-      "price_after": "¥4,080",
-      "sort_price": 4800
+      "price_after": "¥3,672",
+      "sort_price": 4320
     },
     {
       "status": "掲載",
@@ -751,11 +751,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/3b94aadb-64de-4258-841e-3443f0c2c8ed.png",
       "is_ask": false,
-      "price_max": "¥7,000",
+      "price_max": "¥6,300",
       "price_limit": "20",
       "price_reduce": "15%",
-      "price_after": "¥5,950",
-      "sort_price": 7000
+      "price_after": "¥5,355",
+      "sort_price": 6300
     },
     {
       "status": "掲載",
@@ -765,11 +765,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/1eda1939-dc8c-4375-a805-6c8ec678db53.jpg",
       "is_ask": false,
-      "price_max": "¥4,700",
+      "price_max": "¥4,230",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥3,995",
-      "sort_price": 4700
+      "price_after": "¥3,596",
+      "sort_price": 4230
     },
     {
       "status": "掲載",
@@ -779,11 +779,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/97440b9d-a1bc-43e0-acf5-6468e911360e.png",
       "is_ask": false,
-      "price_max": "¥4,700",
+      "price_max": "¥4,230",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥3,995",
-      "sort_price": 4700
+      "price_after": "¥3,596",
+      "sort_price": 4230
     },
     {
       "status": "掲載",
@@ -793,11 +793,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/dbe9448b-3473-42e5-a6e7-687f912897b8.png",
       "is_ask": false,
-      "price_max": "¥3,000",
+      "price_max": "¥2,700",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥2,550",
-      "sort_price": 3000
+      "price_after": "¥2,295",
+      "sort_price": 2700
     },
     {
       "status": "掲載",
@@ -807,11 +807,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/45d80126-14a7-42bc-86f3-0741af34609c.png",
       "is_ask": false,
-      "price_max": "¥5,000",
+      "price_max": "¥4,500",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥4,250",
-      "sort_price": 5000
+      "price_after": "¥3,825",
+      "sort_price": 4500
     },
     {
       "status": "掲載",
@@ -821,11 +821,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/ws_tcg/df016ff2-0baa-4272-b175-56a64f4cc57a.png",
       "is_ask": false,
-      "price_max": "¥5,000",
+      "price_max": "¥4,500",
       "price_limit": "50",
       "price_reduce": "15%",
-      "price_after": "¥4,250",
-      "sort_price": 5000
+      "price_after": "¥3,825",
+      "sort_price": 4500
     },
     {
       "status": "掲載",
@@ -835,11 +835,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/c8f15a17-4cd9-4270-9566-01059a1d817a.png",
       "is_ask": false,
-      "price_max": "¥33,000",
+      "price_max": "¥29,700",
       "price_limit": "-",
       "price_reduce": "10%",
-      "price_after": "¥29,700",
-      "sort_price": 33000
+      "price_after": "¥26,730",
+      "sort_price": 29700
     },
     {
       "status": "掲載",
@@ -849,11 +849,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/6d8590a7-993c-4450-b98a-cc225da9580f.png",
       "is_ask": false,
-      "price_max": "¥20,000",
+      "price_max": "¥18,000",
       "price_limit": "-",
       "price_reduce": "10%",
-      "price_after": "¥18,000",
-      "sort_price": 20000
+      "price_after": "¥16,200",
+      "sort_price": 18000
     },
     {
       "status": "強化",
@@ -863,11 +863,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/894e0395-9fd6-4c21-bf82-de186c25c0a4.jpg",
       "is_ask": false,
-      "price_max": "¥33,000",
+      "price_max": "¥29,700",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥33,000",
-      "sort_price": 33000
+      "price_after": "¥29,700",
+      "sort_price": 29700
     },
     {
       "status": "掲載",
@@ -877,11 +877,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/4498d0bc-fdba-42e7-8113-815d2747e89c.jpg",
       "is_ask": false,
-      "price_max": "¥10,000",
+      "price_max": "¥9,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥10,000",
-      "sort_price": 10000
+      "price_after": "¥9,000",
+      "sort_price": 9000
     },
     {
       "status": "掲載",
@@ -891,11 +891,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/af3b28f7-1e86-4dc9-89e7-327f30421965.jpg",
       "is_ask": false,
-      "price_max": "¥155,000",
+      "price_max": "¥139,500",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥155,000",
-      "sort_price": 155000
+      "price_after": "¥139,500",
+      "sort_price": 139500
     },
     {
       "status": "掲載",
@@ -905,11 +905,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/5eb0a9a5-47cf-4716-aa1a-6377db0ba2da.jpg",
       "is_ask": false,
-      "price_max": "¥80,000",
+      "price_max": "¥72,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥80,000",
-      "sort_price": 80000
+      "price_after": "¥72,000",
+      "sort_price": 72000
     },
     {
       "status": "掲載",
@@ -919,11 +919,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/0cdf0143-13d5-4085-97e1-1d5b00bc95e9.jpg",
       "is_ask": false,
-      "price_max": "¥12,000",
+      "price_max": "¥10,800",
       "price_limit": "-",
       "price_reduce": "10%",
-      "price_after": "¥10,800",
-      "sort_price": 12000
+      "price_after": "¥9,720",
+      "sort_price": 10800
     },
     {
       "status": "掲載",
@@ -933,11 +933,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/256c23d9-d65e-4d2d-b8fe-03fa5c2588f0.jpg",
       "is_ask": false,
-      "price_max": "¥32,000",
+      "price_max": "¥28,800",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥32,000",
-      "sort_price": 32000
+      "price_after": "¥28,800",
+      "sort_price": 28800
     },
     {
       "status": "掲載",
@@ -947,11 +947,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/424403d8-6095-41e0-b5dd-391e9dc49c4b.jpg",
       "is_ask": false,
-      "price_max": "¥14,000",
+      "price_max": "¥12,600",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥14,000",
-      "sort_price": 14000
+      "price_after": "¥12,600",
+      "sort_price": 12600
     },
     {
       "status": "掲載",
@@ -961,11 +961,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/5b926765-a47e-423b-a188-03e4c041c17b.jpg",
       "is_ask": false,
-      "price_max": "¥40,000",
+      "price_max": "¥36,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥40,000",
-      "sort_price": 40000
+      "price_after": "¥36,000",
+      "sort_price": 36000
     },
     {
       "status": "掲載",
@@ -975,11 +975,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/8e65d316-267c-4b5a-8e28-ee8f8b8243f8.jpg",
       "is_ask": false,
-      "price_max": "¥14,000",
+      "price_max": "¥12,600",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥14,000",
-      "sort_price": 14000
+      "price_after": "¥12,600",
+      "sort_price": 12600
     },
     {
       "status": "掲載",
@@ -989,11 +989,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/aeb75acc-c519-444c-830e-ac0d8e22b5fc.jpg",
       "is_ask": false,
-      "price_max": "¥5,400",
+      "price_max": "¥4,860",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥5,400",
-      "sort_price": 5400
+      "price_after": "¥4,860",
+      "sort_price": 4860
     },
     {
       "status": "掲載",
@@ -1003,11 +1003,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/a3018643-1e3e-4af5-868d-2434219bc0f4.jpg",
       "is_ask": false,
-      "price_max": "¥120,000",
+      "price_max": "¥108,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥120,000",
-      "sort_price": 120000
+      "price_after": "¥108,000",
+      "sort_price": 108000
     },
     {
       "status": "掲載",
@@ -1017,11 +1017,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/build_divide/7390f067-ea3e-4948-be9a-055bf8a4b424.jpg",
       "is_ask": false,
-      "price_max": "¥120,000",
+      "price_max": "¥108,000",
       "price_limit": "10",
       "price_reduce": "-",
-      "price_after": "¥120,000",
-      "sort_price": 120000
+      "price_after": "¥108,000",
+      "sort_price": 108000
     },
     {
       "status": "掲載",
@@ -1031,11 +1031,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/build_divide/9dbe1205-9ec2-4b5d-ab27-8cfdc02e2932.jpg",
       "is_ask": false,
-      "price_max": "¥20,000",
+      "price_max": "¥18,000",
       "price_limit": "10",
       "price_reduce": "-",
-      "price_after": "¥20,000",
-      "sort_price": 20000
+      "price_after": "¥18,000",
+      "sort_price": 18000
     },
     {
       "status": "掲載",
@@ -1045,11 +1045,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/build_divide/b06f5b37-74a3-4440-9349-59f413eae901.jpg",
       "is_ask": false,
-      "price_max": "¥25,000",
+      "price_max": "¥22,500",
       "price_limit": "10",
       "price_reduce": "-",
-      "price_after": "¥25,000",
-      "sort_price": 25000
+      "price_after": "¥22,500",
+      "sort_price": 22500
     },
     {
       "status": "掲載",
@@ -1059,11 +1059,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/build_divide/f60c4ee2-1bcf-4daa-b0c5-3bda7f69d8a7.jpg",
       "is_ask": false,
-      "price_max": "¥78,000",
+      "price_max": "¥70,200",
       "price_limit": "10",
       "price_reduce": "-",
-      "price_after": "¥78,000",
-      "sort_price": 78000
+      "price_after": "¥70,200",
+      "sort_price": 70200
     },
     {
       "status": "掲載",
@@ -1073,11 +1073,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/build_divide/ed50d4e3-a686-4edd-ac14-4db44afb2eb9.jpg",
       "is_ask": false,
-      "price_max": "¥80,000",
+      "price_max": "¥72,000",
       "price_limit": "10",
       "price_reduce": "-",
-      "price_after": "¥80,000",
-      "sort_price": 80000
+      "price_after": "¥72,000",
+      "sort_price": 72000
     },
     {
       "status": "掲載",
@@ -1087,11 +1087,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/build_divide/db9345ba-c540-4625-9bd4-fb4074fa707e.jpg",
       "is_ask": false,
-      "price_max": "¥20,000",
+      "price_max": "¥18,000",
       "price_limit": "10",
       "price_reduce": "-",
-      "price_after": "¥20,000",
-      "sort_price": 20000
+      "price_after": "¥18,000",
+      "sort_price": 18000
     },
     {
       "status": "掲載",
@@ -1101,11 +1101,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/build_divide/8383b067-7f49-44a6-bfc8-817cb855842f.png",
       "is_ask": false,
-      "price_max": "¥750,000",
+      "price_max": "¥675,000",
       "price_limit": "1",
       "price_reduce": "-",
-      "price_after": "¥750,000",
-      "sort_price": 750000
+      "price_after": "¥675,000",
+      "sort_price": 675000
     }
   ],
   "sotai": [
