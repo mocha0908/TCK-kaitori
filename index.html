@@ -68,7 +68,7 @@
     .card:has(.status-tag) .btn-fav { top: 32px; }
     .btn-fav.active { color: var(--fav); border-color: var(--fav); }
 
-    .card-meta { font-size: 11px; color: var(--text-sub); }
+    .card-meta { font-size: 11px; color: var(--text-sub); display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
     .king-prices { background: var(--primary-light); padding: 8px 12px; border-radius: 8px; margin-top: 4px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; text-align: center; }
     .sotai-prices { background: var(--border); padding: 8px 12px; border-radius: 8px; margin-top: 4px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; text-align: center; }
     .kp-block { display: flex; flex-direction: column; }
@@ -89,6 +89,23 @@
     .animate-pulse { animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
 
+    /* ★ 追加: ラッシュ検索ボタン用スタイル ★ */
+    .rush-search-btn {
+      display: inline-flex;
+      align-items: center;
+      background: #ff7b00;
+      color: #fff !important;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+    .rush-search-btn:hover { opacity: 0.8; }
+
     @media (min-width: 768px) {
       .card-grid { display: none !important; }
       .desktop-table-wrap { display: block; background: var(--card-bg); border-radius: var(--radius); overflow: auto; border: 1px solid var(--border); box-shadow: var(--shadow); max-height: 75vh; }
@@ -101,6 +118,7 @@
       .table-price-after { font-weight: 900; color: var(--accent); font-size: 15px; background: var(--accent-bg); }
       .fav-td { width: 40px; cursor: pointer; color: #ccc; font-size: 18px; user-select: none; }
       .fav-td.active { color: var(--fav); }
+      .rush-search-btn { margin-top: 6px; }
     }
     
     #modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 3000; align-items: center; justify-content: center; cursor: zoom-out; }
@@ -440,6 +458,10 @@
     const isFav = favorites.includes(item.favId);
     const favBtn = `<button class="btn-fav fav-btn-${item.favId} ${isFav?'active':''}" onclick="toggleFav('${item.favId}', event)">${isFav?'★':'☆'}</button>`;
     
+    // ★ 検索URLとボタンタグの生成
+    const searchStr = `${item.code || ''} ${item.rarity || item.spec || ''}`.trim();
+    const rushBtn = searchStr ? `<a href="https://www.cardrush-pokemon.jp/product-list?keyword=${encodeURIComponent(searchStr)}" target="_blank" rel="noopener noreferrer" class="rush-search-btn" onclick="event.stopPropagation()">🔍 ラッシュ検索</a>` : '';
+
     if (item.type === 'sotai') {
       return `
       <div class="card">
@@ -447,7 +469,7 @@
         <div class="card-img"><img src="${item.img}" loading="lazy" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></div>
         <div class="card-body">
           <div class="card-title clickable-copy" onclick="copyToClipboard(this, '${item.name}', 'カード名')">${item.name}</div>
-          <div class="card-meta">型番: <span class="clickable-copy" onclick="copyToClipboard(this, '${item.code}', '型番')">${item.code}</span> | レア: ${item.rarity}</div>
+          <div class="card-meta">型番: <span class="clickable-copy" onclick="copyToClipboard(this, '${item.code}', '型番')">${item.code}</span> | レア: ${item.rarity} ${rushBtn}</div>
           <div class="sotai-prices">
             <div class="kp-block clickable-copy" onclick="copyToClipboard(this, '${item.price_a}', '状態A買取価格')">
               <span class="kp-label" style="color:#2ecc71;">状態A</span><span class="kp-val">${item.price_a}</span>
@@ -470,7 +492,7 @@
         <div class="card-img"><img src="${item.img}" loading="lazy" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></div>
         <div class="card-body">
           <div class="card-title clickable-copy" onclick="copyToClipboard(this, '${item.name}', '商品名')">${item.name}</div>
-          <div class="card-meta">型番: <span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> | 種別: ${item.spec||item.rarity}</div>
+          <div class="card-meta">型番: <span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> | 種別: ${item.spec||item.rarity} ${rushBtn}</div>
           <div class="king-prices">
             <div class="kp-block clickable-copy" onclick="copyToClipboard(this, '${item.price_max}', '上限金額')">
               <span class="kp-label">上限買取金額</span><span class="kp-val">${item.price_max}</span>
@@ -492,12 +514,16 @@
     const isFav = favorites.includes(item.favId);
     const favTd = `<td class="fav-td fav-btn-${item.favId} ${isFav?'active':''}" onclick="toggleFav('${item.favId}', event)">${isFav?'★':'☆'}</td>`;
     
+    // ★ 検索URLとボタンタグの生成
+    const searchStr = `${item.code || ''} ${item.rarity || item.spec || ''}`.trim();
+    const rushBtn = searchStr ? `<a href="https://www.cardrush-pokemon.jp/product-list?keyword=${encodeURIComponent(searchStr)}" target="_blank" rel="noopener noreferrer" class="rush-search-btn" onclick="event.stopPropagation()">🔍 ラッシュ検索</a>` : '';
+
     if (state.currentTab === 'sotai' && item.type === 'sotai') {
       return `
       <tr>
         ${favTd}
         <td class="td-left clickable-copy" style="padding-left:20px;" onclick="copyToClipboard(this, '${item.name}', 'カード名')">${item.name}</td>
-        <td><span class="clickable-copy" onclick="copyToClipboard(this, '${item.code}', '型番')">${item.code}</span> <br><small style="color:var(--text-sub)">${item.rarity}</small></td>
+        <td><span class="clickable-copy" onclick="copyToClipboard(this, '${item.code}', '型番')">${item.code}</span> <br><small style="color:var(--text-sub)">${item.rarity}</small><br>${rushBtn}</td>
         <td><img src="${item.img}" loading="lazy" style="height:50px; width:40px; object-fit:contain; cursor:pointer;" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></td>
         <td class="clickable-copy" style="font-weight:bold; color:#2ecc71;" onclick="copyToClipboard(this, '${item.price_a}', '状態A')">${item.price_a}</td>
         <td class="clickable-copy" style="font-weight:bold; color:#f39c12;" onclick="copyToClipboard(this, '${item.price_a_minus}', '状態A-')">${item.price_a_minus}</td>
@@ -514,7 +540,7 @@
         <td style="font-weight:bold; color:${isLive?'#2ecc71':'#e74c3c'}">${item.status || '-'}</td>
         <td>${item.id || '-'}</td>
         <td class="td-left clickable-copy" onclick="copyToClipboard(this, '${item.name}', '商品名')">${item.name}</td>
-        <td><span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> <br><small style="color:var(--text-sub)">${item.spec||item.rarity||''}</small></td>
+        <td><span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> <br><small style="color:var(--text-sub)">${item.spec||item.rarity||''}</small><br>${rushBtn}</td>
         <td><img src="${item.img}" loading="lazy" style="height:50px; width:40px; object-fit:contain; cursor:pointer;" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></td>
         <td class="table-price-max clickable-copy" onclick="copyToClipboard(this, '${maxPrice}', '上限')">${maxPrice}</td>
         <td class="table-price-reduce">${reduceText}</td>
