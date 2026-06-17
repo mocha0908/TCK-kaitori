@@ -68,7 +68,7 @@
     .card:has(.status-tag) .btn-fav { top: 32px; }
     .btn-fav.active { color: var(--fav); border-color: var(--fav); }
 
-    .card-meta { font-size: 11px; color: var(--text-sub); display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
+    .card-meta { font-size: 11px; color: var(--text-sub); }
     .king-prices { background: var(--primary-light); padding: 8px 12px; border-radius: 8px; margin-top: 4px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; text-align: center; }
     .sotai-prices { background: var(--border); padding: 8px 12px; border-radius: 8px; margin-top: 4px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; text-align: center; }
     .kp-block { display: flex; flex-direction: column; }
@@ -89,7 +89,7 @@
     .animate-pulse { animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
 
-    /* ★ 追加: ラッシュ検索ボタン用スタイル ★ */
+    /* ラッシュ検索ボタン用スタイル */
     .rush-search-btn {
       display: inline-flex;
       align-items: center;
@@ -97,12 +97,12 @@
       color: #fff !important;
       font-size: 10px;
       font-weight: bold;
-      padding: 2px 6px;
+      padding: 3px 8px;
       border-radius: 4px;
       text-decoration: none;
       transition: opacity 0.2s;
       white-space: nowrap;
-      margin-top: 2px;
+      margin-top: 4px;
     }
     .rush-search-btn:hover { opacity: 0.8; }
 
@@ -118,7 +118,6 @@
       .table-price-after { font-weight: 900; color: var(--accent); font-size: 15px; background: var(--accent-bg); }
       .fav-td { width: 40px; cursor: pointer; color: #ccc; font-size: 18px; user-select: none; }
       .fav-td.active { color: var(--fav); }
-      .rush-search-btn { margin-top: 6px; }
     }
     
     #modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 3000; align-items: center; justify-content: center; cursor: zoom-out; }
@@ -457,19 +456,19 @@
   function generateCardHtml(item) {
     const isFav = favorites.includes(item.favId);
     const favBtn = `<button class="btn-fav fav-btn-${item.favId} ${isFav?'active':''}" onclick="toggleFav('${item.favId}', event)">${isFav?'★':'☆'}</button>`;
-    
-    // ★ 検索URLとボタンタグの生成
-    const searchStr = `${item.code || ''} ${item.rarity || item.spec || ''}`.trim();
-    const rushBtn = searchStr ? `<a href="https://www.cardrush-pokemon.jp/product-list?keyword=${encodeURIComponent(searchStr)}" target="_blank" rel="noopener noreferrer" class="rush-search-btn" onclick="event.stopPropagation()">🔍 ラッシュ検索</a>` : '';
 
     if (item.type === 'sotai') {
+      // 素体（sotai）の場合のみボタンを生成
+      const searchStr = `${item.code || ''} ${item.rarity || item.spec || ''}`.trim();
+      const rushBtn = searchStr ? `<a href="https://www.cardrush-pokemon.jp/product-list?keyword=${encodeURIComponent(searchStr)}" target="_blank" rel="noopener noreferrer" class="rush-search-btn" onclick="event.stopPropagation()">🔍 ラッシュ検索</a>` : '';
+
       return `
       <div class="card">
         ${favBtn}
         <div class="card-img"><img src="${item.img}" loading="lazy" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></div>
         <div class="card-body">
           <div class="card-title clickable-copy" onclick="copyToClipboard(this, '${item.name}', 'カード名')">${item.name}</div>
-          <div class="card-meta">型番: <span class="clickable-copy" onclick="copyToClipboard(this, '${item.code}', '型番')">${item.code}</span> | レア: ${item.rarity} ${rushBtn}</div>
+          <div class="card-meta">型番: <span class="clickable-copy" onclick="copyToClipboard(this, '${item.code}', '型番')">${item.code}</span> | レア: ${item.rarity}</div>
           <div class="sotai-prices">
             <div class="kp-block clickable-copy" onclick="copyToClipboard(this, '${item.price_a}', '状態A買取価格')">
               <span class="kp-label" style="color:#2ecc71;">状態A</span><span class="kp-val">${item.price_a}</span>
@@ -481,9 +480,12 @@
               <span class="kp-label" style="color:var(--accent);">ラッシュ</span><span class="kp-val" style="color:var(--accent);">${item.price_rush}</span>
             </div>
           </div>
+          <!-- スマホ版：素体のみ、ラッシュ買取の下にボタンを配置 -->
+          <div style="display: flex; justify-content: flex-end;">${rushBtn}</div>
         </div>
       </div>`;
     } else {
+      // PSA・BOXの場合はボタンを含めない
       const badge = item.status === "掲載" ? `<span class="status-tag">掲載</span>` : `<span class="status-tag stop">${item.status||'未掲載'}</span>`;
       const reduceText = item.price_reduce === "定額設定" ? "（定額適用）" : item.price_reduce;
       return `
@@ -492,7 +494,7 @@
         <div class="card-img"><img src="${item.img}" loading="lazy" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></div>
         <div class="card-body">
           <div class="card-title clickable-copy" onclick="copyToClipboard(this, '${item.name}', '商品名')">${item.name}</div>
-          <div class="card-meta">型番: <span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> | 種別: ${item.spec||item.rarity} ${rushBtn}</div>
+          <div class="card-meta">型番: <span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> | 種別: ${item.spec||item.rarity}</div>
           <div class="king-prices">
             <div class="kp-block clickable-copy" onclick="copyToClipboard(this, '${item.price_max}', '上限金額')">
               <span class="kp-label">上限買取金額</span><span class="kp-val">${item.price_max}</span>
@@ -514,22 +516,27 @@
     const isFav = favorites.includes(item.favId);
     const favTd = `<td class="fav-td fav-btn-${item.favId} ${isFav?'active':''}" onclick="toggleFav('${item.favId}', event)">${isFav?'★':'☆'}</td>`;
     
-    // ★ 検索URLとボタンタグの生成
-    const searchStr = `${item.code || ''} ${item.rarity || item.spec || ''}`.trim();
-    const rushBtn = searchStr ? `<a href="https://www.cardrush-pokemon.jp/product-list?keyword=${encodeURIComponent(searchStr)}" target="_blank" rel="noopener noreferrer" class="rush-search-btn" onclick="event.stopPropagation()">🔍 ラッシュ検索</a>` : '';
+    let rushBtn = '';
+    // 素体（sotai）の場合のみボタンを生成
+    if (item.type === 'sotai') {
+      const searchStr = `${item.code || ''} ${item.rarity || item.spec || ''}`.trim();
+      rushBtn = searchStr ? `<br><a href="https://www.cardrush-pokemon.jp/product-list?keyword=${encodeURIComponent(searchStr)}" target="_blank" rel="noopener noreferrer" class="rush-search-btn" onclick="event.stopPropagation()">🔍 ラッシュ検索</a>` : '';
+    }
 
     if (state.currentTab === 'sotai' && item.type === 'sotai') {
       return `
       <tr>
         ${favTd}
         <td class="td-left clickable-copy" style="padding-left:20px;" onclick="copyToClipboard(this, '${item.name}', 'カード名')">${item.name}</td>
-        <td><span class="clickable-copy" onclick="copyToClipboard(this, '${item.code}', '型番')">${item.code}</span> <br><small style="color:var(--text-sub)">${item.rarity}</small><br>${rushBtn}</td>
+        <td><span class="clickable-copy" onclick="copyToClipboard(this, '${item.code}', '型番')">${item.code}</span> <br><small style="color:var(--text-sub)">${item.rarity}</small></td>
         <td><img src="${item.img}" loading="lazy" style="height:50px; width:40px; object-fit:contain; cursor:pointer;" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></td>
         <td class="clickable-copy" style="font-weight:bold; color:#2ecc71;" onclick="copyToClipboard(this, '${item.price_a}', '状態A')">${item.price_a}</td>
         <td class="clickable-copy" style="font-weight:bold; color:#f39c12;" onclick="copyToClipboard(this, '${item.price_a_minus}', '状態A-')">${item.price_a_minus}</td>
-        <td class="clickable-copy table-price-after" onclick="copyToClipboard(this, '${item.price_rush}', 'ラッシュ')">${item.price_rush}</td>
+        <td class="clickable-copy table-price-after" onclick="copyToClipboard(this, '${item.price_rush}', 'ラッシュ')">${item.price_rush}${rushBtn}</td>
       </tr>`;
     } else {
+      // PSA・BOXの場合はボタン変数（rushBtn）が空になるため表示されません。
+      // ※お気に入りタブで素体が表示される場合は、ここにボタンが表示されます。
       const isLive = item.status === "掲載";
       const reduceText = item.price_reduce === "定額設定" ? "<small style='color:var(--text-sub)'>定額適用</small>" : (item.price_reduce || '-');
       const maxPrice = item.price_max || '-';
@@ -540,12 +547,12 @@
         <td style="font-weight:bold; color:${isLive?'#2ecc71':'#e74c3c'}">${item.status || '-'}</td>
         <td>${item.id || '-'}</td>
         <td class="td-left clickable-copy" onclick="copyToClipboard(this, '${item.name}', '商品名')">${item.name}</td>
-        <td><span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> <br><small style="color:var(--text-sub)">${item.spec||item.rarity||''}</small><br>${rushBtn}</td>
+        <td><span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> <br><small style="color:var(--text-sub)">${item.spec||item.rarity||''}</small></td>
         <td><img src="${item.img}" loading="lazy" style="height:50px; width:40px; object-fit:contain; cursor:pointer;" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></td>
         <td class="table-price-max clickable-copy" onclick="copyToClipboard(this, '${maxPrice}', '上限')">${maxPrice}</td>
         <td class="table-price-reduce">${reduceText}</td>
         <td class="clickable-copy" style="font-weight:bold; color:var(--text-sub);" onclick="copyToClipboard(this, '${item.price_limit||'-'}', '減額上限')">${item.price_limit||'-'}</td>
-        <td class="table-price-after clickable-copy" onclick="copyToClipboard(this, '${afterPrice}', '減額後')">${afterPrice}</td>
+        <td class="table-price-after clickable-copy" onclick="copyToClipboard(this, '${afterPrice}', '減額後')">${afterPrice}${rushBtn}</td>
       </tr>`;
     }
   }
@@ -600,7 +607,6 @@
     document.getElementById('modal').style.display='flex'; 
   }
 
-  // 無限スクロール
   const observer = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting && displayLimit < state.filteredRows.length) {
       displayLimit += INCREMENT;
@@ -612,9 +618,7 @@
     observer.observe(document.getElementById('sentinel'));
   });
 
-  // PC版テーブル内のスクロール検知を追加
   document.getElementById('tableView').addEventListener('scroll', function() {
-    // テーブルの下端まで残り200pxに近づいたら追加読み込み
     if (this.scrollHeight - this.scrollTop - this.clientHeight < 200) {
       if (displayLimit < state.filteredRows.length) {
         displayLimit += INCREMENT;
@@ -623,7 +627,6 @@
     }
   });
 
-  // トップへ戻るボタン
   window.onscroll = function() {
     const btn = document.getElementById('scrollToTop');
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
