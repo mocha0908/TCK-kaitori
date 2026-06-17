@@ -11030,16 +11030,6 @@
       "sort_price": 80000
     },
     {
-      "name": "ヤドキング グレート【P】{030/L-P}[その他]",
-      "code": "030/L-P",
-      "rarity": "P",
-      "price_a": "¥80,000",
-      "price_a_minus": "¥52,000",
-      "price_rush": "¥100,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/18852.webp",
-      "sort_price": 80000
-    },
-    {
       "name": "R団のライコウex バトルロードオータム2004【P】{026/PCG-P}[その他]",
       "code": "026/PCG-P",
       "rarity": "P",
@@ -11840,16 +11830,6 @@
       "sort_price": 52000
     },
     {
-      "name": "(CD付未開封)ピカチュウ 【P】{369/SM-P}[その他]",
-      "code": "369/SM-P",
-      "rarity": "P",
-      "price_a": "¥52,000",
-      "price_a_minus": "¥33,000",
-      "price_rush": "¥65,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/49956.webp",
-      "sort_price": 52000
-    },
-    {
       "name": "ひかるルギア 【H】{058/072}[sm3+]",
       "code": "058/072",
       "rarity": "H",
@@ -11888,16 +11868,6 @@
       "price_rush": "¥65,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/6206.webp",
       "sort_price": 49000
-    },
-    {
-      "name": "(CD付未開封)チルタリス 【P】{291/XY-P}[その他]",
-      "code": "291/XY-P",
-      "rarity": "P",
-      "price_a": "¥48,000",
-      "price_a_minus": "¥31,000",
-      "price_rush": "¥60,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/22320.webp",
-      "sort_price": 48000
     },
     {
       "name": "フシギバナ 乱戦！ポケモンスクランブル【-】{001/016}[乱]",
@@ -14220,16 +14190,6 @@
       "sort_price": 16000
     },
     {
-      "name": "アブソル グレート【-】{027/040}[その他]",
-      "code": "027/040",
-      "rarity": "-",
-      "price_a": "¥16,000",
-      "price_a_minus": "¥10,000",
-      "price_rush": "¥20,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45660.webp",
-      "sort_price": 16000
-    },
-    {
       "name": "ピチュー兄弟 【P】{078/PCG-P}[その他]",
       "code": "078/PCG-P",
       "rarity": "P",
@@ -14820,16 +14780,6 @@
       "sort_price": 13000
     },
     {
-      "name": "セレビィ グレート【-】{007/080}[その他]",
-      "code": "007/080",
-      "rarity": "-",
-      "price_a": "¥13,000",
-      "price_a_minus": "¥8,800",
-      "price_rush": "¥17,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45643.webp",
-      "sort_price": 13000
-    },
-    {
       "name": "名探偵ピカチュウ 【P】{099/S-P}[その他]",
       "code": "099/S-P",
       "rarity": "P",
@@ -15200,26 +15150,6 @@
       "sort_price": 12000
     },
     {
-      "name": "ヘルガー グレート【-】{008/019}[その他]",
-      "code": "008/019",
-      "rarity": "-",
-      "price_a": "¥12,000",
-      "price_a_minus": "¥7,800",
-      "price_rush": "¥15,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45647.webp",
-      "sort_price": 12000
-    },
-    {
-      "name": "バンギラス グレート【-】{044/080}[その他]",
-      "code": "044/080",
-      "rarity": "-",
-      "price_a": "¥12,000",
-      "price_a_minus": "¥7,800",
-      "price_rush": "¥15,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45669.webp",
-      "sort_price": 12000
-    },
-    {
       "name": "ピカチュウ 【P】{259/XY-P}[その他]",
       "code": "259/XY-P",
       "rarity": "P",
@@ -15447,16 +15377,6 @@
       "price_a_minus": "¥7,200",
       "price_rush": "¥14,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/4411.webp",
-      "sort_price": 11000
-    },
-    {
-      "name": "ハッサム グレート【-】{008/019}[その他]",
-      "code": "008/019",
-      "rarity": "-",
-      "price_a": "¥11,000",
-      "price_a_minus": "¥7,200",
-      "price_rush": "¥14,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45648.webp",
       "sort_price": 11000
     },
     {
@@ -15887,16 +15807,6 @@
       "price_a_minus": "¥6,200",
       "price_rush": "¥12,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/43150.webp",
-      "sort_price": 9600
-    },
-    {
-      "name": "(CD付未開封)イーブイ 【P】{247/SM-P+CD付}[その他]",
-      "code": "247/SM-P+CD付",
-      "rarity": "P",
-      "price_a": "¥9,600",
-      "price_a_minus": "¥6,200",
-      "price_rush": "¥12,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/14385.webp",
       "sort_price": 9600
     },
     {
@@ -16490,36 +16400,6 @@
       "sort_price": 8000
     },
     {
-      "name": "メガニウム グレート【-】{009/070}[その他]",
-      "code": "009/070",
-      "rarity": "-",
-      "price_a": "¥8,000",
-      "price_a_minus": "¥5,200",
-      "price_rush": "¥10,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45650.webp",
-      "sort_price": 8000
-    },
-    {
-      "name": "バクフーン グレート【-】{017/070}[その他]",
-      "code": "017/070",
-      "rarity": "-",
-      "price_a": "¥8,000",
-      "price_a_minus": "¥5,200",
-      "price_rush": "¥10,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45654.webp",
-      "sort_price": 8000
-    },
-    {
-      "name": "デンリュウ グレート【-】{034/070}[その他]",
-      "code": "034/070",
-      "rarity": "-",
-      "price_a": "¥8,000",
-      "price_a_minus": "¥5,200",
-      "price_rush": "¥10,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45665.webp",
-      "sort_price": 8000
-    },
-    {
       "name": "ピカチュウ 【-】{001/010}[SNP橙]",
       "code": "001/010",
       "rarity": "-",
@@ -17090,16 +16970,6 @@
       "sort_price": 7200
     },
     {
-      "name": "オーダイル グレート【-】{025/070}[その他]",
-      "code": "025/070",
-      "rarity": "-",
-      "price_a": "¥7,200",
-      "price_a_minus": "¥4,600",
-      "price_rush": "¥9,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45656.webp",
-      "sort_price": 7200
-    },
-    {
       "name": "ラティアスδ-デルタ種 【P】{120/PCG-P}[その他]",
       "code": "120/PCG-P",
       "rarity": "P",
@@ -17277,16 +17147,6 @@
       "price_a_minus": "¥4,400",
       "price_rush": "¥8,500",
       "img": "https://files.cardrush.media/pokemon/ocha_products/2703.webp",
-      "sort_price": 6800
-    },
-    {
-      "name": "メガヤンマ グレート【-】{006/080}[その他]",
-      "code": "006/080",
-      "rarity": "-",
-      "price_a": "¥6,800",
-      "price_a_minus": "¥4,400",
-      "price_rush": "¥8,500",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45645.webp",
       "sort_price": 6800
     },
     {
@@ -17660,36 +17520,6 @@
       "sort_price": 6400
     },
     {
-      "name": "キングドラ グレート【-】{015/080}[その他]",
-      "code": "015/080",
-      "rarity": "-",
-      "price_a": "¥6,400",
-      "price_a_minus": "¥4,100",
-      "price_rush": "¥8,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45652.webp",
-      "sort_price": 6400
-    },
-    {
-      "name": "クロバット グレート【-】{037/070}[その他]",
-      "code": "037/070",
-      "rarity": "-",
-      "price_a": "¥6,400",
-      "price_a_minus": "¥4,100",
-      "price_rush": "¥8,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45663.webp",
-      "sort_price": 6400
-    },
-    {
-      "name": "カイリキー グレート【-】{045/080}[その他]",
-      "code": "045/080",
-      "rarity": "-",
-      "price_a": "¥6,400",
-      "price_a_minus": "¥4,100",
-      "price_rush": "¥8,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45667.webp",
-      "sort_price": 6400
-    },
-    {
       "name": "ピカチュウ セブンイレブン【P】{242/SM-P}[その他]",
       "code": "242/SM-P",
       "rarity": "P",
@@ -18050,16 +17880,6 @@
       "sort_price": 6000
     },
     {
-      "name": "ハガネール グレート【-】{047/080}[その他]",
-      "code": "047/080",
-      "rarity": "-",
-      "price_a": "¥6,000",
-      "price_a_minus": "¥3,900",
-      "price_rush": "¥7,500",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45671.webp",
-      "sort_price": 6000
-    },
-    {
       "name": "ピカチュウ 【P】{064/XY-P}[その他]",
       "code": "064/XY-P",
       "rarity": "P",
@@ -18407,16 +18227,6 @@
       "price_a_minus": "¥3,600",
       "price_rush": "¥7,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/6379.webp",
-      "sort_price": 5600
-    },
-    {
-      "name": "ランターン グレート【-】{020/080}[その他]",
-      "code": "020/080",
-      "rarity": "-",
-      "price_a": "¥5,600",
-      "price_a_minus": "¥3,600",
-      "price_rush": "¥7,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45658.webp",
       "sort_price": 5600
     },
     {
@@ -19250,26 +19060,6 @@
       "sort_price": 4800
     },
     {
-      "name": "ジバコイル グレート【-】{011/040}[その他]",
-      "code": "011/040",
-      "rarity": "-",
-      "price_a": "¥4,800",
-      "price_a_minus": "¥3,100",
-      "price_rush": "¥6,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45649.webp",
-      "sort_price": 4800
-    },
-    {
-      "name": "ドンファン グレート【-】{046/070}[その他]",
-      "code": "046/070",
-      "rarity": "-",
-      "price_a": "¥4,800",
-      "price_a_minus": "¥3,100",
-      "price_rush": "¥6,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45673.webp",
-      "sort_price": 4800
-    },
-    {
       "name": "グレイシアGX 【SR】{067/066}[sm5m]",
       "code": "067/066",
       "rarity": "SR",
@@ -19677,16 +19467,6 @@
       "price_a_minus": "¥2,800",
       "price_rush": "¥5,500",
       "img": "https://files.cardrush.media/pokemon/ocha_products/45894.webp",
-      "sort_price": 4400
-    },
-    {
-      "name": "リングマ グレート【-】{061/070}[その他]",
-      "code": "061/070",
-      "rarity": "-",
-      "price_a": "¥4,400",
-      "price_a_minus": "¥2,800",
-      "price_rush": "¥5,500",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45675.webp",
       "sort_price": 4400
     },
     {
@@ -20117,16 +19897,6 @@
       "price_a_minus": "¥2,600",
       "price_rush": "¥5,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/18500.webp",
-      "sort_price": 4000
-    },
-    {
-      "name": "マルマイン グレート【-】{027/080}[その他]",
-      "code": "027/080",
-      "rarity": "-",
-      "price_a": "¥4,000",
-      "price_a_minus": "¥2,600",
-      "price_rush": "¥5,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45661.webp",
       "sort_price": 4000
     },
     {
@@ -26660,16 +26430,6 @@
       "sort_price": 1300
     },
     {
-      "name": "(CD付未開封)ふくよかミュージシャン 【P】{119/S-P+CD付}[その他]",
-      "code": "119/S-P+CD付",
-      "rarity": "P",
-      "price_a": "¥1,300",
-      "price_a_minus": "¥850",
-      "price_rush": "¥1,700",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/20216.webp",
-      "sort_price": 1300
-    },
-    {
       "name": "ルカリオ 【P】{069/SM-P}[その他]",
       "code": "069/SM-P",
       "rarity": "P",
@@ -32477,16 +32237,6 @@
       "price_a_minus": "¥450",
       "price_rush": "¥900",
       "img": "https://files.cardrush.media/pokemon/ocha_products/78377.webp",
-      "sort_price": 700
-    },
-    {
-      "name": "ハピナス グレート【-】{054/070}[その他]",
-      "code": "054/070",
-      "rarity": "-",
-      "price_a": "¥700",
-      "price_a_minus": "¥450",
-      "price_rush": "¥900",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/45677.webp",
       "sort_price": 700
     },
     {
