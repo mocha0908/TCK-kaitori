@@ -8300,6 +8300,16 @@
       "sort_price": 3600
     },
     {
+      "name": "アローラキュウコンGX 【SSR】{213/150}[sm8b]",
+      "code": "213/150",
+      "rarity": "SSR",
+      "price_a": "¥3,500",
+      "price_a_minus": "¥2,300",
+      "price_rush": "¥4,200",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/2156.webp",
+      "sort_price": 3500
+    },
+    {
       "name": "リーフィアVMAX 【HR】{088/069}[S6a]",
       "code": "088/069",
       "rarity": "HR",
@@ -8397,16 +8407,6 @@
       "price_a_minus": "¥2,200",
       "price_rush": "¥4,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/34758.webp",
-      "sort_price": 3400
-    },
-    {
-      "name": "アローラキュウコンGX 【SSR】{213/150}[sm8b]",
-      "code": "213/150",
-      "rarity": "SSR",
-      "price_a": "¥3,400",
-      "price_a_minus": "¥2,200",
-      "price_rush": "¥4,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/2156.webp",
       "sort_price": 3400
     },
     {
@@ -11100,16 +11100,6 @@
       "sort_price": 2200
     },
     {
-      "name": "カスミの元気 【SR】{108/081}[M5]",
-      "code": "108/081",
-      "rarity": "SR",
-      "price_a": "¥2,200",
-      "price_a_minus": "¥1,400",
-      "price_rush": "¥2,600",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/81489.webp",
-      "sort_price": 2200
-    },
-    {
       "name": "シルヴァディGX SA【HR】{072/049}[sm11b]",
       "code": "072/049",
       "rarity": "HR",
@@ -11147,6 +11137,16 @@
       "price_a_minus": "¥1,300",
       "price_rush": "¥2,500",
       "img": "https://files.cardrush.media/pokemon/ocha_products/63639.webp",
+      "sort_price": 2100
+    },
+    {
+      "name": "カスミの元気 【SR】{108/081}[M5]",
+      "code": "108/081",
+      "rarity": "SR",
+      "price_a": "¥2,100",
+      "price_a_minus": "¥1,300",
+      "price_rush": "¥2,500",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/81489.webp",
       "sort_price": 2100
     },
     {
@@ -15690,16 +15690,6 @@
       "sort_price": 1100
     },
     {
-      "name": "メガダークライex 【SR】{099/081}[M5]",
-      "code": "099/081",
-      "rarity": "SR",
-      "price_a": "¥1,100",
-      "price_a_minus": "¥750",
-      "price_rush": "¥1,400",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/81480.webp",
-      "sort_price": 1100
-    },
-    {
       "name": "プレシャスキャリー ACE仕様【-】{015/022}[SVLN]",
       "code": "015/022",
       "rarity": "-",
@@ -16227,6 +16217,16 @@
       "price_a_minus": "¥700",
       "price_rush": "¥1,300",
       "img": "https://files.cardrush.media/pokemon/ocha_products/35730.webp",
+      "sort_price": 1100
+    },
+    {
+      "name": "メガダークライex 【SR】{099/081}[M5]",
+      "code": "099/081",
+      "rarity": "SR",
+      "price_a": "¥1,100",
+      "price_a_minus": "¥700",
+      "price_rush": "¥1,300",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/81480.webp",
       "sort_price": 1100
     },
     {
@@ -20310,6 +20310,16 @@
       "sort_price": 750
     },
     {
+      "name": "カメール Classicキラ【-】{002/032}[CLK]",
+      "code": "002/032",
+      "rarity": "-",
+      "price_a": "¥750",
+      "price_a_minus": "¥450",
+      "price_rush": "¥900",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/49048.webp",
+      "sort_price": 750
+    },
+    {
       "name": "テツノカイナex 【SAR】{210/187}[SV8a]",
       "code": "210/187",
       "rarity": "SAR",
@@ -20657,6 +20667,16 @@
       "price_a_minus": "¥400",
       "price_rush": "¥800",
       "img": "https://files.cardrush.media/pokemon/ocha_products/65276.webp",
+      "sort_price": 650
+    },
+    {
+      "name": "ゲンガーex ノーマル仕様【-】{445/742}[MC]",
+      "code": "445/742",
+      "rarity": "-",
+      "price_a": "¥650",
+      "price_a_minus": "¥400",
+      "price_rush": "¥800",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/75449.webp",
       "sort_price": 650
     },
     {
@@ -21940,16 +21960,6 @@
       "sort_price": 650
     },
     {
-      "name": "カメール Classicキラ【-】{002/032}[CLK]",
-      "code": "002/032",
-      "rarity": "-",
-      "price_a": "¥650",
-      "price_a_minus": "¥400",
-      "price_rush": "¥800",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/49048.webp",
-      "sort_price": 650
-    },
-    {
       "name": "サワムラー Classicキラ【-】{011/032}[CLF]",
       "code": "011/032",
       "rarity": "-",
@@ -22327,16 +22337,6 @@
       "price_a_minus": "¥350",
       "price_rush": "¥700",
       "img": "https://files.cardrush.media/pokemon/ocha_products/63626.webp",
-      "sort_price": 550
-    },
-    {
-      "name": "ゲンガーex ノーマル仕様【-】{445/742}[MC]",
-      "code": "445/742",
-      "rarity": "-",
-      "price_a": "¥550",
-      "price_a_minus": "¥350",
-      "price_rush": "¥700",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/75449.webp",
       "sort_price": 550
     },
     {
@@ -29360,6 +29360,16 @@
       "sort_price": 300
     },
     {
+      "name": "ゼニガメ 【P】{061/SV-P}[その他]",
+      "code": "061/SV-P",
+      "rarity": "P",
+      "price_a": "¥300",
+      "price_a_minus": "¥200",
+      "price_rush": "¥400",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/43159.webp",
+      "sort_price": 300
+    },
+    {
       "name": "メルタン 【P】{078/SV-P}[PROMO]",
       "code": "078/SV-P",
       "rarity": "P",
@@ -32337,16 +32347,6 @@
       "price_a_minus": "¥150",
       "price_rush": "¥300",
       "img": "https://files.cardrush.media/pokemon/ocha_products/43157.webp",
-      "sort_price": 250
-    },
-    {
-      "name": "ゼニガメ 【P】{061/SV-P}[その他]",
-      "code": "061/SV-P",
-      "rarity": "P",
-      "price_a": "¥250",
-      "price_a_minus": "¥150",
-      "price_rush": "¥300",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/43159.webp",
       "sort_price": 250
     },
     {
