@@ -1166,6 +1166,36 @@
   ],
   "sotai": [
     {
+      "name": "最低保証SAR",
+      "code": "-",
+      "rarity": "SAR",
+      "price_a": "¥700",
+      "price_a_minus": "¥400",
+      "price_rush": "-",
+      "img": "",
+      "sort_price": 700
+    },
+    {
+      "name": "最低保証AR/CHR",
+      "code": "-",
+      "rarity": "AR",
+      "price_a": "¥250",
+      "price_a_minus": "¥130",
+      "price_rush": "-",
+      "img": "",
+      "sort_price": 250
+    },
+    {
+      "name": "最低保証RR/RRR",
+      "code": "-",
+      "rarity": "RR",
+      "price_a": "¥30",
+      "price_a_minus": "¥10",
+      "price_rush": "-",
+      "img": "",
+      "sort_price": 30
+    },
+    {
       "name": "カイ 【SAR】{236/172}[S12a]",
       "code": "236/172",
       "rarity": "SAR",
