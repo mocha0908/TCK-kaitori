@@ -1168,7 +1168,7 @@
     {
       "name": "最低保証SAR",
       "code": "-",
-      "rarity": "SAR",
+      "rarity": "保証",
       "price_a": "¥700",
       "price_a_minus": "¥400",
       "price_rush": "-",
@@ -1178,7 +1178,7 @@
     {
       "name": "最低保証AR/CHR",
       "code": "-",
-      "rarity": "AR",
+      "rarity": "保証",
       "price_a": "¥250",
       "price_a_minus": "¥130",
       "price_rush": "-",
@@ -1188,7 +1188,7 @@
     {
       "name": "最低保証RR/RRR",
       "code": "-",
-      "rarity": "RR",
+      "rarity": "保証",
       "price_a": "¥30",
       "price_a_minus": "¥10",
       "price_rush": "-",
