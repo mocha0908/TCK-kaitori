@@ -3339,11 +3339,11 @@
       "name": "メガリザードンXex 【SAR】{110/080}[M2]",
       "code": "110/080",
       "rarity": "SAR",
-      "price_a": "¥110,000",
-      "price_a_minus": "¥70,000",
+      "price_a": "¥100,000",
+      "price_a_minus": "¥65,000",
       "price_rush": "¥100,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/71713.webp",
-      "sort_price": 110000
+      "sort_price": 100000
     },
     {
       "name": "ロトムex 【SAR】{112/080}[M2]",
@@ -4019,11 +4019,11 @@
       "name": "リーフィアV 【SR】{070/069}[S6a]",
       "code": "070/069",
       "rarity": "SR",
-      "price_a": "¥1,600",
-      "price_a_minus": "¥1,000",
+      "price_a": "¥1,700",
+      "price_a_minus": "¥1,100",
       "price_rush": "¥1,600",
       "img": "https://files.cardrush.media/pokemon/ocha_products/20736.webp",
-      "sort_price": 1600
+      "sort_price": 1700
     },
     {
       "name": "カイリューV 【SR】{073/067}[S7R]",
@@ -4619,11 +4619,11 @@
       "name": "リザード 【AR】{169/165}[SV2a]",
       "code": "169/165",
       "rarity": "AR",
-      "price_a": "¥2,500",
-      "price_a_minus": "¥1,600",
+      "price_a": "¥2,700",
+      "price_a_minus": "¥1,700",
       "price_rush": "¥2,500",
       "img": "https://files.cardrush.media/pokemon/ocha_products/43828.webp",
-      "sort_price": 2500
+      "sort_price": 2700
     },
     {
       "name": "イッカネズミ 【AR】{081/071}[SV2D]",
@@ -5139,11 +5139,11 @@
       "name": "チラチーノ 【AR】{158/086}[SV11B]",
       "code": "158/086",
       "rarity": "AR",
-      "price_a": "¥950",
-      "price_a_minus": "¥600",
+      "price_a": "¥900",
+      "price_a_minus": "¥550",
       "price_rush": "¥900",
       "img": "https://files.cardrush.media/pokemon/ocha_products/67327.webp",
-      "sort_price": 950
+      "sort_price": 900
     },
     {
       "name": "ツタージャ 【AR】{087/086}[SV11B]",
@@ -6299,11 +6299,11 @@
       "name": "ミミッキュVMAX 【RRR】{077/184}[S8b]",
       "code": "077/184",
       "rarity": "RRR",
-      "price_a": "¥650",
-      "price_a_minus": "¥400",
+      "price_a": "¥600",
+      "price_a_minus": "¥350",
       "price_rush": "¥600",
       "img": "https://files.cardrush.media/pokemon/ocha_products/22715.webp",
-      "sort_price": 650
+      "sort_price": 600
     },
     {
       "name": "レックウザVMAX 【RRR】{120/184}[S8b]",
@@ -6319,11 +6319,11 @@
       "name": "リザードンVSTAR 【RRR】{015/100}[S9]",
       "code": "015/100",
       "rarity": "RRR",
-      "price_a": "¥950",
-      "price_a_minus": "¥600",
+      "price_a": "¥900",
+      "price_a_minus": "¥550",
       "price_rush": "¥900",
       "img": "https://files.cardrush.media/pokemon/ocha_products/24287.webp",
-      "sort_price": 950
+      "sort_price": 900
     },
     {
       "name": "ミュウVMAX 【RRR】{054/172}[S12a]",
@@ -6809,11 +6809,11 @@
       "name": "ピカチュウV s4【RR】{030/100}[s4]",
       "code": "030/100",
       "rarity": "RR",
-      "price_a": "¥650",
-      "price_a_minus": "¥400",
+      "price_a": "¥600",
+      "price_a_minus": "¥350",
       "price_rush": "¥600",
       "img": "https://files.cardrush.media/pokemon/ocha_products/14484.webp",
-      "sort_price": 650
+      "sort_price": 600
     },
     {
       "name": "ギャラドスV 【RR】{020/067}[S7R]",
@@ -6869,11 +6869,11 @@
       "name": "リザードンV 【RR】{014/100}[S9]",
       "code": "014/100",
       "rarity": "RR",
-      "price_a": "¥950",
-      "price_a_minus": "¥600",
+      "price_a": "¥900",
+      "price_a_minus": "¥550",
       "price_rush": "¥900",
       "img": "https://files.cardrush.media/pokemon/ocha_products/24286.webp",
-      "sort_price": 950
+      "sort_price": 900
     },
     {
       "name": "レックウザV 【RR】{107/172}[S12a]",
@@ -7199,11 +7199,11 @@
       "name": "ピカチュウ 【P】{197/SV-P}[PROMO]",
       "code": "197/SV-P",
       "rarity": "P",
-      "price_a": "¥1,500",
-      "price_a_minus": "¥950",
+      "price_a": "¥1,400",
+      "price_a_minus": "¥900",
       "price_rush": "¥1,400",
       "img": "https://files.cardrush.media/pokemon/ocha_products/59379.webp",
-      "sort_price": 1500
+      "sort_price": 1400
     },
     {
       "name": "ビクティニ BWR仕様【P】{288/SV-P}[PROMO]",
@@ -7304,16 +7304,6 @@
       "price_rush": "¥200,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/6160.webp",
       "sort_price": 180000
-    },
-    {
-      "name": "コダック 【P】{262/SV-P}[その他]",
-      "code": "262/SV-P",
-      "rarity": "P",
-      "price_a": "¥800",
-      "price_a_minus": "¥500",
-      "price_rush": "¥800",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/65417.webp",
-      "sort_price": 800
     },
     {
       "name": "コダック ムンク【P】{286/SM-P}[その他]",
@@ -16733,6 +16723,16 @@
       "price_a_minus": "¥450",
       "price_rush": "¥800",
       "img": "https://files.cardrush.media/pokemon/ocha_products/46118.webp",
+      "sort_price": 800
+    },
+    {
+      "name": "コダック 【P】{262/SV-P}[その他]",
+      "code": "262/SV-P",
+      "rarity": "P",
+      "price_a": "¥800",
+      "price_a_minus": "¥450",
+      "price_rush": "¥800",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/65417.webp",
       "sort_price": 800
     },
     {
