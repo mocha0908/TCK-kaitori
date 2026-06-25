@@ -653,11 +653,25 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/e6610b2d-0e10-47af-a827-0a40ee889a23.jpg",
       "is_ask": false,
-      "price_max": "¥5,800",
+      "price_max": "¥6,500",
       "price_limit": "10",
       "price_reduce": "定額設定",
       "price_after": "¥6,300",
-      "sort_price": 5800
+      "sort_price": 6500
+    },
+    {
+      "status": "掲載",
+      "id": 210958,
+      "name": "超感謝祭 ファンタジーBEST(1BOX)",
+      "code": "DM24-EX1",
+      "spec": "未開封",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/d0df5753-9d20-48d2-a158-8630b3b49f42.jpg",
+      "is_ask": false,
+      "price_max": "¥6,500",
+      "price_limit": "5",
+      "price_reduce": "定額設定",
+      "price_after": "¥6,300",
+      "sort_price": 6500
     },
     {
       "status": "掲載",
@@ -667,11 +681,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/b945ebde-e7b0-4617-b174-96f26bb7f17c.png",
       "is_ask": false,
-      "price_max": "¥6,700",
+      "price_max": "¥7,500",
       "price_limit": "15",
       "price_reduce": "定額設定",
       "price_after": "¥7,000",
-      "sort_price": 6700
+      "sort_price": 7500
     },
     {
       "status": "掲載",
