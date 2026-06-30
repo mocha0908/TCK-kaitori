@@ -9,11 +9,12 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/gD28pgFNAqPfjeHRlrrpVwM2eMXSR5VZnpYJI82z.png",
       "is_ask": false,
-      "price_max": "¥10,000",
+      "price_max": "¥9,500",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥10,000",
-      "sort_price": 10000
+      "price_after": "¥9,500",
+      "sort_price": 9500,
+      "is_capped": true
     },
     {
       "status": "掲載",
