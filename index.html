@@ -128,6 +128,29 @@
     
     .scroll-to-top { position: fixed; bottom: 20px; right: 20px; width: 45px; height: 45px; border-radius: 50%; background: var(--primary); color: white; border: none; font-size: 18px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: none; z-index: 500; font-weight: bold; opacity: 0.9; }
 
+    /* 上限リスト・減額対象用のハイライトスタイル */
+    .card.is-capped {
+      background-color: #fff8e1; /* 薄い黄色 */
+      border: 1px solid #ffe082;
+    }
+    .card.is-capped .card-reduce-row {
+      background: #ffe082;
+      color: #bf360c;
+    }
+    tr.is-capped td {
+      background-color: #fff8e1 !important;
+    }
+    .capped-badge {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+      background: #e67e22; /* オレンジ */
+      color: white;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
     /* ダークモード完全対応 */
     @media (prefers-color-scheme: dark) {
       :root {
@@ -141,6 +164,18 @@
       td { border-bottom: 1px solid #333; }
       .btn-fav { background: rgba(30,30,30,0.8); border-color: #444; }
       .filter-row select { background: #2d2d2d; color: #fff; border-color: #444; }
+
+      .card.is-capped {
+        background-color: #3e3115;
+        border-color: #5c4717;
+      }
+      .card.is-capped .card-reduce-row {
+        background: #5c4717;
+        color: #ffcc80;
+      }
+      tr.is-capped td {
+        background-color: #3e3115 !important;
+      }
     }
   </style>
 </head>
@@ -279,8 +314,8 @@
         return { ...item, type, favId, searchTarget, initGrp, img: formatImageUrl(item.img) };
       };
 
-      database.psa = (data.psa || []).filter(i => i.status === "掲載").map(i => formatItem(i, 'psa', 'PSA10'));
-      database.box = (data.box || []).filter(i => i.status === "掲載").map(i => formatItem(i, 'box', 'BOX'));
+      database.psa = (data.psa || []).map(i => formatItem(i, 'psa', 'PSA10'));
+      database.box = (data.box || []).map(i => formatItem(i, 'box', 'BOX'));
       database.sotai = (data.sotai || []).map(i => formatItem(i, 'sotai', '-'));
       database.all = [...database.psa, ...database.box, ...database.sotai];
 
@@ -480,20 +515,25 @@
               <span class="kp-label" style="color:var(--accent);">ラッシュ</span><span class="kp-val" style="color:var(--accent);">${item.price_rush}</span>
             </div>
           </div>
-          <!-- スマホ版：素体のみ、ラッシュ買取の下にボタンを配置 -->
           <div style="display: flex; justify-content: flex-end;">${rushBtn}</div>
         </div>
       </div>`;
     } else {
       // PSA・BOXの場合はボタンを含めない
-      const badge = item.status === "掲載" ? `<span class="status-tag">掲載</span>` : `<span class="status-tag stop">${item.status||'未掲載'}</span>`;
+      const isCapped = item.is_capped; // 上限フラグ
+      const cappedClass = isCapped ? 'is-capped' : '';
+      const cappedBadge = isCapped ? `<span class="capped-badge">価格変動/終了</span>` : '';
+      
+      const activeStatuses = ["掲載", "注意", "強化", "超強化"];
+      const isActive = activeStatuses.includes(item.status);
+      const badge = isActive ? `<span class="status-tag">${item.status}</span>` : `<span class="status-tag stop">${item.status||'未掲載'}</span>`;
       const reduceText = item.price_reduce === "定額設定" ? "（定額適用）" : item.price_reduce;
       return `
-      <div class="card">
+      <div class="card ${cappedClass}">
         ${badge} ${favBtn}
         <div class="card-img"><img src="${item.img}" loading="lazy" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></div>
         <div class="card-body">
-          <div class="card-title clickable-copy" onclick="copyToClipboard(this, '${item.name}', '商品名')">${item.name}</div>
+          <div class="card-title clickable-copy" onclick="copyToClipboard(this, '${item.name}', '商品名')">${item.name} ${cappedBadge}</div>
           <div class="card-meta">型番: <span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> | 種別: ${item.spec||item.rarity}</div>
           <div class="king-prices">
             <div class="kp-block clickable-copy" onclick="copyToClipboard(this, '${item.price_max}', '上限金額')">
@@ -536,17 +576,21 @@
       </tr>`;
     } else {
       // PSA・BOXの場合はボタン変数（rushBtn）が空になるため表示されません。
-      // ※お気に入りタブで素体が表示される場合は、ここにボタンが表示されます。
-      const isLive = item.status === "掲載";
+      const isCapped = item.is_capped; // 上限フラグ
+      const cappedClass = isCapped ? 'is-capped' : '';
+      const cappedBadge = isCapped ? `<span class="capped-badge">価格変動/終了</span>` : '';
+
+      const activeStatuses = ["掲載", "注意", "強化", "超強化"];
+      const isLive = activeStatuses.includes(item.status);
       const reduceText = item.price_reduce === "定額設定" ? "<small style='color:var(--text-sub)'>定額適用</small>" : (item.price_reduce || '-');
       const maxPrice = item.price_max || '-';
       const afterPrice = item.price_after || item.price_a || '-'; 
       return `
-      <tr>
+      <tr class="${cappedClass}">
         ${favTd}
         <td style="font-weight:bold; color:${isLive?'#2ecc71':'#e74c3c'}">${item.status || '-'}</td>
         <td>${item.id || '-'}</td>
-        <td class="td-left clickable-copy" onclick="copyToClipboard(this, '${item.name}', '商品名')">${item.name}</td>
+        <td class="td-left clickable-copy" onclick="copyToClipboard(this, '${item.name}', '商品名')">${item.name} ${cappedBadge}</td>
         <td><span class="clickable-copy" onclick="copyToClipboard(this, '${item.code||'-'}', '型番')">${item.code||'-'}</span> <br><small style="color:var(--text-sub)">${item.spec||item.rarity||''}</small></td>
         <td><img src="${item.img}" loading="lazy" style="height:50px; width:40px; object-fit:contain; cursor:pointer;" onclick="showModal('${item.img}')" onerror="this.onerror=null; this.src='${fallbackImg}'"></td>
         <td class="table-price-max clickable-copy" onclick="copyToClipboard(this, '${maxPrice}', '上限')">${maxPrice}</td>
