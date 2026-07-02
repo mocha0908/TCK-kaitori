@@ -619,17 +619,17 @@
     },
     {
       "status": "掲載",
-      "id": 220662,
-      "name": "愛感謝祭 ヒロインBEST(1BOX)",
-      "code": "25EX1",
+      "id": 233160,
+      "name": "逆札篇 第2弾 燃えろ禁断！逆転のドギラゴン革命!! (1BOX)",
+      "code": "DM26-RP2",
       "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/e6610b2d-0e10-47af-a827-0a40ee889a23.jpg",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/c1080417-ec41-4498-aad0-fcd116e18036.png",
       "is_ask": false,
-      "price_max": "¥6,500",
-      "price_limit": "10",
-      "price_reduce": "定額設定",
-      "price_after": "¥6,300",
-      "sort_price": 6500
+      "price_max": "¥8,000",
+      "price_limit": "20",
+      "price_reduce": "10%",
+      "price_after": "¥7,200",
+      "sort_price": 8000
     },
     {
       "status": "掲載",
@@ -641,20 +641,6 @@
       "is_ask": false,
       "price_max": "¥7,500",
       "price_limit": "15",
-      "price_reduce": "定額設定",
-      "price_after": "¥6,000",
-      "sort_price": 7500
-    },
-    {
-      "status": "掲載",
-      "id": 233160,
-      "name": "逆札篇 第2弾 燃えろ禁断！逆転のドギラゴン革命!! (1BOX)",
-      "code": "DM26-RP2",
-      "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/c1080417-ec41-4498-aad0-fcd116e18036.png",
-      "is_ask": false,
-      "price_max": "¥7,500",
-      "price_limit": "10",
       "price_reduce": "定額設定",
       "price_after": "¥6,000",
       "sort_price": 7500
