@@ -493,17 +493,17 @@
     },
     {
       "status": "掲載",
-      "id": 19688,
-      "name": "リミックスバウト",
-      "code": "sm11a",
+      "id": 19942,
+      "name": "スカイレジェンド",
+      "code": "sm10b",
       "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/be8572e4-46ad-4840-ba81-25938f554ee1.png",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/edd0ad65-fbff-4341-bad0-cc27d3d5d8cc.jpg",
       "is_ask": false,
-      "price_max": "¥144,000",
+      "price_max": "¥117,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥144,000",
-      "sort_price": 144000
+      "price_after": "¥117,000",
+      "sort_price": 117000
     },
     {
       "status": "掲載",
@@ -532,20 +532,6 @@
       "price_reduce": "-",
       "price_after": "¥378,000",
       "sort_price": 378000
-    },
-    {
-      "status": "掲載",
-      "id": 209884,
-      "name": "フェアリーライズ",
-      "code": "sm7b",
-      "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/ce093dc7-e29c-4965-8ee4-bfde8633b54f.jpg",
-      "is_ask": false,
-      "price_max": "¥81,000",
-      "price_limit": "-",
-      "price_reduce": "-",
-      "price_after": "¥81,000",
-      "sort_price": 81000
     },
     {
       "status": "掲載",
