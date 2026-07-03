@@ -507,20 +507,6 @@
     },
     {
       "status": "掲載",
-      "id": 19612,
-      "name": "ジージーエンド",
-      "code": "sm10a",
-      "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/78c155c1-bdb8-4597-a466-00069f2ca02c.png",
-      "is_ask": false,
-      "price_max": "¥103,500",
-      "price_limit": "-",
-      "price_reduce": "-",
-      "price_after": "¥103,500",
-      "sort_price": 103500
-    },
-    {
-      "status": "掲載",
       "id": 19666,
       "name": "タッグボルト",
       "code": "sm9",
