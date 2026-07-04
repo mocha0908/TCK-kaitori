@@ -1685,11 +1685,11 @@
       "name": "ゼラオラVMAX 【SAR】{219/172}[S12a]",
       "code": "219/172",
       "rarity": "SAR",
-      "price_a": "¥2,100",
+      "price_a": "¥2,000",
       "price_a_minus": "¥1,300",
       "price_rush": "¥2,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/38399.webp",
-      "sort_price": 2100
+      "sort_price": 2000
     },
     {
       "name": "ゼラオラVSTAR 【SAR】{220/172}[S12a]",
@@ -3525,11 +3525,11 @@
       "name": "ニンフィアV SA【SR】{083/069}[S6a]",
       "code": "083/069",
       "rarity": "SR",
-      "price_a": "¥23,000",
+      "price_a": "¥22,000",
       "price_a_minus": "¥14,000",
       "price_rush": "¥22,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/20749.webp",
-      "sort_price": 23000
+      "sort_price": 22000
     },
     {
       "name": "ブースターV 【SR】{072/069}[S6a]",
@@ -7265,11 +7265,11 @@
       "name": "ロケット団のミミッキュ 【AR】{205/193}[M2a]",
       "code": "205/193",
       "rarity": "AR",
-      "price_a": "¥500",
+      "price_a": "¥450",
       "price_a_minus": "¥300",
       "price_rush": "¥500",
       "img": "https://files.cardrush.media/pokemon/ocha_products/73702.webp",
-      "sort_price": 500
+      "sort_price": 450
     },
     {
       "name": "ピッピ 【AR】{086/080}[M3]",
