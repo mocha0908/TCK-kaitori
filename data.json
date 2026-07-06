@@ -3,16 +3,6 @@
   "box": [],
   "sotai": [
     {
-      "name": "カード名",
-      "code": "型番",
-      "rarity": "レアリティ",
-      "price_a": "¥NaN",
-      "price_a_minus": "¥NaN",
-      "price_rush": "¥NaN",
-      "img": "画像リンク",
-      "sort_price": 0
-    },
-    {
       "name": "カイ 【SAR】{236/172}[S12a]",
       "code": "236/172",
       "rarity": "SAR",
