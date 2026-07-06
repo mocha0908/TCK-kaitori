@@ -3,6 +3,26 @@
   "box": [],
   "sotai": [
     {
+      "name": "カード名",
+      "code": "型番",
+      "rarity": "レアリティ",
+      "price_a": "¥NaN",
+      "price_a_minus": "¥NaN",
+      "price_rush": "¥NaN",
+      "img": "画像リンク",
+      "sort_price": 0
+    },
+    {
+      "name": "カイ 【SAR】{236/172}[S12a]",
+      "code": "236/172",
+      "rarity": "SAR",
+      "price_a": "¥2,100",
+      "price_a_minus": "¥1,500",
+      "price_rush": "¥2,500",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/38416.webp",
+      "sort_price": 2100
+    },
+    {
       "name": "シロナの覇気 【SAR】{239/172}[S12a]",
       "code": "239/172",
       "rarity": "SAR",
