@@ -625,11 +625,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/dfc846a2-cf71-439d-9a1f-d6feca1542f6.png",
       "is_ask": false,
-      "price_max": "¥6,300",
+      "price_max": "¥7,000",
       "price_limit": "20",
       "price_reduce": "定額設定",
       "price_after": "¥6,500",
-      "sort_price": 6300
+      "sort_price": 7000
     },
     {
       "status": "掲載",
@@ -644,6 +644,20 @@
       "price_reduce": "定額設定",
       "price_after": "¥6,000",
       "sort_price": 7500
+    },
+    {
+      "status": "掲載",
+      "id": 213911,
+      "name": "異次元の超獣使い(1BOX)",
+      "code": "24EX4",
+      "spec": "未開封",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/87badb74-9b62-4bb8-839b-b5bf51db0804.jpg",
+      "is_ask": false,
+      "price_max": "¥3,400",
+      "price_limit": "10",
+      "price_reduce": "定額設定",
+      "price_after": "¥3,000",
+      "sort_price": 3400
     },
     {
       "status": "掲載",
