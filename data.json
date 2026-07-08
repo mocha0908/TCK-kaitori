@@ -611,11 +611,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/dfc846a2-cf71-439d-9a1f-d6feca1542f6.png",
       "is_ask": false,
-      "price_max": "¥7,000",
-      "price_limit": "20",
+      "price_max": "¥6,500",
+      "price_limit": "10",
       "price_reduce": "定額設定",
-      "price_after": "¥6,500",
-      "sort_price": 7000
+      "price_after": "¥6,000",
+      "sort_price": 6500
     },
     {
       "status": "掲載",
@@ -639,11 +639,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/87badb74-9b62-4bb8-839b-b5bf51db0804.jpg",
       "is_ask": false,
-      "price_max": "¥3,400",
+      "price_max": "¥5,000",
       "price_limit": "10",
       "price_reduce": "定額設定",
-      "price_after": "¥3,000",
-      "sort_price": 3400
+      "price_after": "¥4,000",
+      "sort_price": 5000
     },
     {
       "status": "掲載",
