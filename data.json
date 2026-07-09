@@ -16723,16 +16723,6 @@
       "sort_price": 1100
     },
     {
-      "name": "ピカチュウ 【P】{133/M-P}[その他]",
-      "code": "133/M-P",
-      "rarity": "P",
-      "price_a": "¥1,100",
-      "price_a_minus": "¥650",
-      "price_rush": "¥1,200",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/82052.webp",
-      "sort_price": 1100
-    },
-    {
       "name": "リーフィアGX 【RR】{012/066}[sm5s]",
       "code": "012/066",
       "rarity": "RR",
@@ -24690,6 +24680,16 @@
       "price_a_minus": "¥250",
       "price_rush": "¥500",
       "img": "https://files.cardrush.media/pokemon/ocha_products/35238.webp",
+      "sort_price": 450
+    },
+    {
+      "name": "ピカチュウ 【P】{133/M-P}[その他]",
+      "code": "133/M-P",
+      "rarity": "P",
+      "price_a": "¥450",
+      "price_a_minus": "¥250",
+      "price_rush": "¥500",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/82052.webp",
       "sort_price": 450
     },
     {
