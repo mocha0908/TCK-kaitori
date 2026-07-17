@@ -3,6 +3,20 @@
   "box": [
     {
       "status": "掲載",
+      "id": 233884,
+      "name": "Casio G-Shock x Pokemon GA-110PKM-7AJR \"White\"",
+      "code": "",
+      "spec": "素体",
+      "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/tMZAo2ajbXfSJutgOmS2Qu8mV6B0ccStCYd72phV.png",
+      "is_ask": false,
+      "price_max": "¥67,900",
+      "price_limit": "100",
+      "price_reduce": "-",
+      "price_after": "¥67,900",
+      "sort_price": 67900
+    },
+    {
+      "status": "掲載",
       "id": 232417,
       "name": "アビスアイ(1BOX)",
       "code": "",
