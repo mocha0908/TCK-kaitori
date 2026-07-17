@@ -633,6 +633,20 @@
     },
     {
       "status": "掲載",
+      "id": 234553,
+      "name": "BEYOND THE BRAVE(1BOX)",
+      "code": "-",
+      "spec": "未開封",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/yugioh/545f5c52-59e4-4c96-8c1b-9a60d3bcde9a.png",
+      "is_ask": false,
+      "price_max": "¥6,500",
+      "price_limit": "100",
+      "price_reduce": "定額設定",
+      "price_after": "¥6,000",
+      "sort_price": 6500
+    },
+    {
+      "status": "掲載",
       "id": 222395,
       "name": "LIMITED PACK GX －オシリスレッド－(1BOX)",
       "code": "-",
