@@ -23,11 +23,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/onepiece/b0f62508-91d9-40ee-bff9-bf42f81ae459.png",
       "is_ask": false,
-      "price_max": "¥14,500",
+      "price_max": "¥22,300",
       "price_limit": "999",
       "price_reduce": "-",
-      "price_after": "¥14,500",
-      "sort_price": 14500
+      "price_after": "¥22,300",
+      "sort_price": 22300
     },
     {
       "status": "掲載",
