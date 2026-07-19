@@ -655,8 +655,8 @@
       "is_ask": false,
       "price_max": "¥6,300",
       "price_limit": "100",
-      "price_reduce": "定額設定",
-      "price_after": "¥5,500",
+      "price_reduce": "-",
+      "price_after": "¥6,300",
       "sort_price": 6300
     },
     {
