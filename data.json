@@ -24,7 +24,7 @@
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/onepiece/b0f62508-91d9-40ee-bff9-bf42f81ae459.png",
       "is_ask": false,
       "price_max": "¥14,500",
-      "price_limit": "999",
+      "price_limit": "200",
       "price_reduce": "-",
       "price_after": "¥14,500",
       "sort_price": 14500
@@ -709,11 +709,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/dfc846a2-cf71-439d-9a1f-d6feca1542f6.png",
       "is_ask": false,
-      "price_max": "¥6,300",
+      "price_max": "¥6,700",
       "price_limit": "20",
       "price_reduce": "定額設定",
       "price_after": "¥5,500",
-      "sort_price": 6300
+      "sort_price": 6700
     },
     {
       "status": "掲載",
