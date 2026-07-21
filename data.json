@@ -3078,7 +3078,7 @@
       "code": "088/063",
       "rarity": "SAR",
       "price_a": "¥8,000",
-      "price_a_minus": "¥4,800",
+      "price_a_minus": "¥4,400",
       "price_rush": "¥8,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/70047.webp",
       "sort_price": 8000
@@ -7418,7 +7418,7 @@
       "code": "064/063",
       "rarity": "AR",
       "price_a": "¥1,000",
-      "price_a_minus": "¥600",
+      "price_a_minus": "¥550",
       "price_rush": "¥1,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/70023.webp",
       "sort_price": 1000
@@ -9112,6 +9112,16 @@
       "price_rush": "¥800",
       "img": "https://files.cardrush.media/pokemon/ocha_products/82052.webp",
       "sort_price": 800
+    },
+    {
+      "name": "ピカチュウ 【P】{291/SV-P}[その他]",
+      "code": "291/SV-P",
+      "rarity": "P",
+      "price_a": "¥400",
+      "price_a_minus": "¥200",
+      "price_rush": "¥400",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/71989.webp",
+      "sort_price": 400
     },
     {
       "name": "ピカチュウ マクドナルド【P】{020/M-P}[その他]",
@@ -19734,6 +19744,16 @@
       "sort_price": 950
     },
     {
+      "name": "フォッコ ポケモンパン【P】{035/XY-P}[その他]",
+      "code": "035/XY-P",
+      "rarity": "P",
+      "price_a": "¥950",
+      "price_a_minus": "¥600",
+      "price_rush": "¥1,000",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/80277.webp",
+      "sort_price": 950
+    },
+    {
       "name": "テラパゴスex 【UR】{237/187}[SV8a]",
       "code": "237/187",
       "rarity": "UR",
@@ -28461,16 +28481,6 @@
       "price_a_minus": "¥200",
       "price_rush": "¥400",
       "img": "https://files.cardrush.media/pokemon/ocha_products/66238.webp",
-      "sort_price": 350
-    },
-    {
-      "name": "ピカチュウ 【P】{291/SV-P}[その他]",
-      "code": "291/SV-P",
-      "rarity": "P",
-      "price_a": "¥350",
-      "price_a_minus": "¥200",
-      "price_rush": "¥400",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/71989.webp",
       "sort_price": 350
     },
     {
