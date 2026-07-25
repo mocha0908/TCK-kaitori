@@ -619,20 +619,6 @@
     },
     {
       "status": "掲載",
-      "id": 234835,
-      "name": "LIMITED PACK GX-ラーイエロー-(1BOX)",
-      "code": "-",
-      "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/yugioh/e0e72d26-2075-4e38-aff3-59b945da745e.png",
-      "is_ask": false,
-      "price_max": "¥5,000",
-      "price_limit": "200",
-      "price_reduce": "定額設定",
-      "price_after": "¥4,500",
-      "sort_price": 5000
-    },
-    {
-      "status": "掲載",
       "id": 230183,
       "name": "LIMIT OVER COLLECTION-THE RIVALS-(1BOX)",
       "code": "-",
