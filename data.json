@@ -661,6 +661,20 @@
     },
     {
       "status": "掲載",
+      "id": 212553,
+      "name": "悪魔神、復活(1BOX)",
+      "code": "DM24-RP4",
+      "spec": "未開封",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/e94daaba-0a2a-4c2f-a0e2-46e49eb85d75.jpg",
+      "is_ask": false,
+      "price_max": "¥6,700",
+      "price_limit": "10",
+      "price_reduce": "-",
+      "price_after": "¥6,700",
+      "sort_price": 6700
+    },
+    {
+      "status": "掲載",
       "id": 211595,
       "name": "ブースターパック ホロライブプロダクション Vol.1&Vol.2 Re:Mix",
       "code": "-",
