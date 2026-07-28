@@ -32,7 +32,6 @@
       --radius: 12px;
       --radius-lg: 16px;
       --content-width: 1360px;
-      --sticky-offset: 126px;
     }
 
     * {
@@ -88,6 +87,18 @@
 
     .skip-link:focus {
       transform: translateY(0);
+    }
+
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      margin: -1px !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
     }
 
     .app-header {
@@ -344,8 +355,7 @@
 
     .history-row::-webkit-scrollbar,
     .other-matches::-webkit-scrollbar,
-    .tab-row::-webkit-scrollbar,
-    .filter-row::-webkit-scrollbar {
+    .tab-row::-webkit-scrollbar {
       display: none;
     }
 
@@ -460,46 +470,66 @@
 
     .filter-block {
       min-width: 0;
-    }
-
-    .filter-label {
-      margin: 0 0 5px;
-      color: var(--text-sub);
-      font-size: 11px;
-      font-weight: 800;
-    }
-
-    .filter-row {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      overflow-x: auto;
-      padding-bottom: 2px;
-      scrollbar-width: none;
-    }
-
-    .filter-chip {
-      flex: 0 0 auto;
-      min-height: 36px;
       border: 1px solid var(--border);
-      border-radius: 999px;
+      border-radius: var(--radius);
       background: var(--surface);
-      color: #475467;
-      padding: 7px 13px;
-      font-size: 12px;
-      font-weight: 700;
-      cursor: pointer;
+      padding: 11px 12px;
+      display: grid;
+      grid-template-columns: 72px minmax(0, 1fr);
+      align-items: start;
+      gap: 10px;
       box-shadow: var(--shadow-sm);
     }
 
+    .filter-label {
+      margin: 9px 0 0;
+      color: var(--text-sub);
+      font-size: 11px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .filter-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+      align-items: stretch;
+      gap: 8px;
+      overflow: visible;
+    }
+
+    .filter-chip {
+      width: 100%;
+      min-width: 0;
+      min-height: 38px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: var(--surface-soft);
+      color: #475467;
+      padding: 7px 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.3;
+      text-align: center;
+      overflow-wrap: anywhere;
+      cursor: pointer;
+      transition: border-color 0.15s ease, background 0.15s ease,
+        color 0.15s ease, transform 0.15s ease;
+    }
+
     .filter-chip:hover {
-      border-color: #98a2b3;
+      border-color: #84adff;
+      background: var(--primary-soft);
+      color: var(--primary-dark);
     }
 
     .filter-chip.active {
       border-color: var(--primary);
       background: var(--primary);
       color: #fff;
+      box-shadow: 0 2px 5px rgba(23, 92, 211, 0.2);
     }
 
     .result-summary {
@@ -919,6 +949,7 @@
       background: var(--surface);
       overflow-x: auto;
       box-shadow: var(--shadow-sm);
+      scrollbar-color: #cbd5e1 transparent;
     }
 
     .result-area[data-view="list"] .table-wrap {
@@ -927,27 +958,59 @@
 
     table {
       width: 100%;
+      min-width: 1120px;
+      table-layout: fixed;
       border-collapse: separate;
       border-spacing: 0;
     }
 
+    .col-favorite {
+      width: 52px;
+    }
+
+    .col-category {
+      width: 82px;
+    }
+
+    .col-status {
+      width: 102px;
+    }
+
+    .col-image {
+      width: 78px;
+    }
+
+    .col-price {
+      width: 158px;
+    }
+
+    .col-details {
+      width: 202px;
+    }
+
+    .col-master {
+      width: 112px;
+    }
+
     thead th {
-      position: sticky;
-      top: var(--sticky-offset);
-      z-index: 20;
       border-bottom: 1px solid var(--border-strong);
-      background: #f8fafc;
-      color: var(--text-sub);
-      padding: 10px;
+      background: #f2f4f7;
+      color: #475467;
+      padding: 11px 10px;
       text-align: center;
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 800;
       white-space: nowrap;
     }
 
+    thead th:nth-child(4),
+    thead th:nth-child(7) {
+      text-align: left;
+    }
+
     tbody td {
       border-bottom: 1px solid var(--border);
-      padding: 10px;
+      padding: 12px 10px;
       text-align: center;
       vertical-align: middle;
       font-size: 12px;
@@ -970,16 +1033,15 @@
     }
 
     .table-product {
-      min-width: 280px;
-      max-width: 460px;
       text-align: left;
     }
 
     .table-product-name {
       display: block;
       overflow-wrap: anywhere;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 800;
+      line-height: 1.45;
     }
 
     .table-product-meta {
@@ -1032,10 +1094,9 @@
     }
 
     .table-details {
-      min-width: 190px;
       color: var(--text-sub);
       text-align: left;
-      font-size: 10px;
+      font-size: 11px;
       line-height: 1.65;
     }
 
@@ -1285,6 +1346,21 @@
         padding: 14px 16px 70px;
       }
 
+      .filter-block {
+        padding: 10px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+      }
+
+      .filter-label {
+        margin: 0;
+        font-size: 12px;
+      }
+
+      .filter-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .result-area[data-view="tile"] .card-list {
         grid-template-columns: 1fr;
       }
@@ -1449,7 +1525,7 @@
       <form id="searchForm" class="search-row" role="search">
         <div class="search-field">
           <span class="search-symbol" aria-hidden="true">⌕</span>
-          <label for="keyword" class="skip-link">商品名・型番・マスタIDを検索</label>
+          <label for="keyword" class="sr-only">商品名・型番・マスタIDを検索</label>
           <input
             id="keyword"
             type="search"
@@ -1521,6 +1597,16 @@
 
       <div class="table-wrap">
         <table>
+          <colgroup>
+            <col class="col-favorite">
+            <col class="col-category">
+            <col class="col-status">
+            <col>
+            <col class="col-image">
+            <col class="col-price">
+            <col class="col-details">
+            <col class="col-master">
+          </colgroup>
           <thead>
             <tr>
               <th scope="col">★</th>
@@ -1717,19 +1803,6 @@
       window.addEventListener("scroll", () => {
         elements.scrollTopButton.classList.toggle("visible", window.scrollY > 420);
       }, { passive: true });
-
-      const updateStickyOffset = () => {
-        document.documentElement.style.setProperty(
-          "--sticky-offset",
-          elements.searchShell.getBoundingClientRect().height + "px"
-        );
-      };
-      updateStickyOffset();
-      if ("ResizeObserver" in window) {
-        new ResizeObserver(updateStickyOffset).observe(elements.searchShell);
-      } else {
-        window.addEventListener("resize", updateStickyOffset);
-      }
 
       document.addEventListener("visibilitychange", () => {
         if (
