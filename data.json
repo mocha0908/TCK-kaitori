@@ -605,6 +605,20 @@
     },
     {
       "status": "掲載",
+      "id": 208392,
+      "name": "邪神と水晶の華(1BOX)",
+      "code": "",
+      "spec": "未開封",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/c8a24045-8046-494e-8f26-17f2585e6c7a.jpg",
+      "is_ask": false,
+      "price_max": "¥20,300",
+      "price_limit": "10",
+      "price_reduce": "定額設定",
+      "price_after": "¥18,000",
+      "sort_price": 20300
+    },
+    {
+      "status": "掲載",
       "id": 233160,
       "name": "逆札篇 第2弾 燃えろ禁断！逆転のドギラゴン革命!! (1BOX)",
       "code": "DM26-RP2",
@@ -613,8 +627,8 @@
       "is_ask": false,
       "price_max": "¥6,700",
       "price_limit": "10",
-      "price_reduce": "-",
-      "price_after": "¥6,700",
+      "price_reduce": "定額設定",
+      "price_after": "¥6,000",
       "sort_price": 6700
     },
     {
@@ -640,24 +654,10 @@
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/87badb74-9b62-4bb8-839b-b5bf51db0804.jpg",
       "is_ask": false,
       "price_max": "¥3,800",
-      "price_limit": "10",
-      "price_reduce": "定額設定",
-      "price_after": "¥3,000",
+      "price_limit": "-",
+      "price_reduce": "-",
+      "price_after": "¥3,800",
       "sort_price": 3800
-    },
-    {
-      "status": "掲載",
-      "id": 230983,
-      "name": "逆札篇 第1弾 逆転神VS切札竜",
-      "code": "DM26-RP1",
-      "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/dfc846a2-cf71-439d-9a1f-d6feca1542f6.png",
-      "is_ask": false,
-      "price_max": "¥6,300",
-      "price_limit": "10",
-      "price_reduce": "定額設定",
-      "price_after": "¥5,500",
-      "sort_price": 6300
     },
     {
       "status": "掲載",
