@@ -9,12 +9,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/c35f41b7-1b28-483a-b382-abb6a0b1734f.png",
       "is_ask": false,
-      "price_max": "¥25,500",
+      "price_max": "¥25,700",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥25,500",
-      "sort_price": 25500,
-      "is_capped": true
+      "price_after": "¥25,700",
+      "sort_price": 25700
     },
     {
       "status": "掲載",
@@ -24,12 +23,11 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/f6eVC3APzTJmz98j31sXOb2tXvklCSZK2v7L2GV1.png",
       "is_ask": false,
-      "price_max": "¥22,000",
+      "price_max": "¥22,300",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥22,000",
-      "sort_price": 22000,
-      "is_capped": true
+      "price_after": "¥22,300",
+      "sort_price": 22300
     },
     {
       "status": "掲載",
