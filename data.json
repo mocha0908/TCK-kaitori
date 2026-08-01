@@ -9,12 +9,11 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/c35f41b7-1b28-483a-b382-abb6a0b1734f.png",
       "is_ask": false,
-      "price_max": "¥21,000",
+      "price_max": "¥22,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥21,000",
-      "sort_price": 21000,
-      "is_capped": true
+      "price_after": "¥22,000",
+      "sort_price": 22000
     },
     {
       "status": "掲載",
