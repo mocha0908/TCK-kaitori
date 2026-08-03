@@ -3101,6 +3101,9 @@
       if (item.type === "sotai") {
         appendSubPrice(container, "状態A−", item.price_a_minus, false, true);
         appendSubPrice(container, "外部参考（ラッシュ）", item.price_rush, true);
+      } else {
+        // PSA・BOX：M列から出力された状態減額価格
+        appendSubPrice(container, "状態減額価格", item.price_state, false, true);
       }
 
       return container;
@@ -3162,6 +3165,8 @@
         return;
       }
 
+      // PSA・BOX：M列から出力された状態減額価格
+      appendDetailLine(cell, "状態減額価格", item.price_state, true, true);
       appendDetailLine(
         cell,
         "減額幅",
