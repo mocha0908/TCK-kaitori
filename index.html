@@ -3068,17 +3068,20 @@
     }
 
     function canSearchRush(item) {
-      return item.type === "sotai" && Boolean(item.code || item.name);
+      return item.type === "sotai" && Boolean(item.code);
     }
 
     function createRushLink(item) {
       const link = document.createElement("a");
+      const rushType = item.rarity || item.spec;
+      const rushKeyword = [item.code, rushType].filter(Boolean).join(" ");
+
       link.className = "secondary-link";
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       link.href =
         "https://www.cardrush-pokemon.jp/product-list?keyword=" +
-        encodeURIComponent([item.name, item.code, item.rarity].filter(Boolean).join(" "));
+        encodeURIComponent(rushKeyword);
       link.textContent = "ラッシュで検索";
       link.setAttribute("aria-label", item.name + "をカードラッシュで検索");
       return link;
