@@ -3102,11 +3102,14 @@
       container.className = "sub-prices";
 
       if (item.type === "sotai") {
-        appendSubPrice(container, "状態A−", item.price_a_minus, false, true);
+        appendSubPrice(container, "状態A-", item.price_a_minus, false, true);
+        appendSubPrice(container, "状態B", item.price_b, false, true);
+        appendSubPrice(container, "状態減額価格", item.price_state, false, true);
         appendSubPrice(container, "外部参考（ラッシュ）", item.price_rush, true);
       } else {
-        // PSA・BOX：M列から出力された状態減額価格
         appendSubPrice(container, "状態減額価格", item.price_state, false, true);
+        appendSubPrice(container, "状態A-", item.price_a_minus, false, true);
+        appendSubPrice(container, "状態B", item.price_b, false, true);
       }
 
       return container;
@@ -3163,13 +3166,16 @@
 
     function appendTableDetails(cell, item) {
       if (item.type === "sotai") {
-        appendDetailLine(cell, "状態A−", item.price_a_minus, true, true);
+        appendDetailLine(cell, "状態A-", item.price_a_minus, true, true);
+        appendDetailLine(cell, "状態B", item.price_b, true, true);
+        appendDetailLine(cell, "状態減額価格", item.price_state, true, true);
         appendDetailLine(cell, "外部参考", item.price_rush, true);
         return;
       }
 
-      // PSA・BOX：M列から出力された状態減額価格
       appendDetailLine(cell, "状態減額価格", item.price_state, true, true);
+      appendDetailLine(cell, "状態A-", item.price_a_minus, true, true);
+      appendDetailLine(cell, "状態B", item.price_b, true, true);
       appendDetailLine(
         cell,
         "減額幅",
