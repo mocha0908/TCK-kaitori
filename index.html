@@ -1936,6 +1936,7 @@
           <label class="sort-control" for="sortSelect">
             並び順
             <select id="sortSelect">
+              <option value="csv">CSV順</option>
               <option value="relevance">検索一致順</option>
               <option value="name">商品名順</option>
               <option value="price-desc">価格の高い順</option>
@@ -2056,7 +2057,7 @@
       query: "",
       initialKey: "ALL",
       rarityKey: "ALL",
-      sortMode: "relevance",
+      sortMode: "csv",
       viewMode: safeStoredString("tck_view_mode", ["list", "tile"], "list"),
       themeMode: safeStoredString("tck_theme", ["light", "dark"], "light"),
       fontSizeMode: safeStoredString(
@@ -2418,15 +2419,26 @@
     }
 
     function hydrateDatabase(payload) {
-      database.psa = (payload.psa || []).map((item) => formatItem(item, "psa", "PSA10"));
-      database.box = (payload.box || []).map((item) => formatItem(item, "box", "BOX"));
-      database.sotai = (payload.sotai || []).map((item) => formatItem(item, "sotai", ""));
+      const psaRows = payload.psa || [];
+      const boxRows = payload.box || [];
+      const sotaiRows = payload.sotai || [];
+
+      // JSONへ書き出された順番＝スプレッドシート（CSV）の並び順として保持する
+      database.psa = psaRows.map((item, index) =>
+        formatItem(item, "psa", "PSA10", index)
+      );
+      database.box = boxRows.map((item, index) =>
+        formatItem(item, "box", "BOX", psaRows.length + index)
+      );
+      database.sotai = sotaiRows.map((item, index) =>
+        formatItem(item, "sotai", "", psaRows.length + boxRows.length + index)
+      );
       database.all = [...database.psa, ...database.box, ...database.sotai];
 
       migrateFavorites();
     }
 
-    function formatItem(rawItem, type, defaultSpec) {
+    function formatItem(rawItem, type, defaultSpec, sourceOrder = 0) {
       const item = rawItem && typeof rawItem === "object" ? rawItem : {};
       const name = cleanValue(item.name) || "名称未設定";
       const code = cleanValue(item.code);
@@ -2461,6 +2473,7 @@
         id: masterId,
         aliases,
         is_capped: isCapped,
+        sourceOrder,
         stableKey,
         legacyFavId,
         initGroup: getInitialGroup(name),
@@ -2652,6 +2665,13 @@
     }
 
     function sortRows(rows) {
+      if (state.sortMode === "csv") {
+        rows.sort((left, right) =>
+          (Number(left.sourceOrder) || 0) - (Number(right.sourceOrder) || 0)
+        );
+        return;
+      }
+
       if (state.sortMode === "price-desc") {
         rows.sort((left, right) =>
           numericPrice(currentPriceValue(right)) - numericPrice(currentPriceValue(left)) ||
@@ -3101,15 +3121,23 @@
       const container = document.createElement("div");
       container.className = "sub-prices";
 
+      // 状態A-または状態Bが設定されている場合は、状態減額価格を重複表示しない
+      const hasDetailedStatePrice =
+        hasValue(item.price_a_minus) || hasValue(item.price_b);
+
       if (item.type === "sotai") {
         appendSubPrice(container, "状態A-", item.price_a_minus, false, true);
         appendSubPrice(container, "状態B", item.price_b, false, true);
-        appendSubPrice(container, "状態減額価格", item.price_state, false, true);
+        if (!hasDetailedStatePrice) {
+          appendSubPrice(container, "状態減額価格", item.price_state, false, true);
+        }
         appendSubPrice(container, "外部参考（ラッシュ）", item.price_rush, true);
       } else {
-        appendSubPrice(container, "状態減額価格", item.price_state, false, true);
         appendSubPrice(container, "状態A-", item.price_a_minus, false, true);
         appendSubPrice(container, "状態B", item.price_b, false, true);
+        if (!hasDetailedStatePrice) {
+          appendSubPrice(container, "状態減額価格", item.price_state, false, true);
+        }
       }
 
       return container;
@@ -3165,17 +3193,25 @@
     }
 
     function appendTableDetails(cell, item) {
+      // 状態A-または状態Bが設定されている場合は、状態減額価格を重複表示しない
+      const hasDetailedStatePrice =
+        hasValue(item.price_a_minus) || hasValue(item.price_b);
+
       if (item.type === "sotai") {
         appendDetailLine(cell, "状態A-", item.price_a_minus, true, true);
         appendDetailLine(cell, "状態B", item.price_b, true, true);
-        appendDetailLine(cell, "状態減額価格", item.price_state, true, true);
+        if (!hasDetailedStatePrice) {
+          appendDetailLine(cell, "状態減額価格", item.price_state, true, true);
+        }
         appendDetailLine(cell, "外部参考", item.price_rush, true);
         return;
       }
 
-      appendDetailLine(cell, "状態減額価格", item.price_state, true, true);
       appendDetailLine(cell, "状態A-", item.price_a_minus, true, true);
       appendDetailLine(cell, "状態B", item.price_b, true, true);
+      if (!hasDetailedStatePrice) {
+        appendDetailLine(cell, "状態減額価格", item.price_state, true, true);
+      }
       appendDetailLine(
         cell,
         "減額幅",
