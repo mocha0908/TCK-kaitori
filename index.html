@@ -1938,7 +1938,7 @@
             <select id="sortSelect">
               <option value="csv">CSV順</option>
               <option value="relevance">検索一致順</option>
-              <option value="name">商品名順</option>
+              <option value="name">あいうえお順</option>
               <option value="price-desc">価格の高い順</option>
             </select>
           </label>
@@ -2045,6 +2045,13 @@
       { key: "OTHER", label: "英数・他" }
     ]);
 
+    const JAPANESE_COLLATOR = new Intl.Collator("ja-JP", {
+      usage: "sort",
+      sensitivity: "base",
+      numeric: true,
+      ignorePunctuation: true
+    });
+
     const database = {
       psa: [],
       box: [],
@@ -2057,7 +2064,7 @@
       query: "",
       initialKey: "ALL",
       rarityKey: "ALL",
-      sortMode: "csv",
+      sortMode: "name",
       viewMode: safeStoredString("tck_view_mode", ["list", "tile"], "list"),
       themeMode: safeStoredString("tck_theme", ["light", "dark"], "light"),
       fontSizeMode: safeStoredString(
@@ -2086,6 +2093,7 @@
 
     function init() {
       cacheElements();
+      elements.sortSelect.value = state.sortMode;
       renderFontSize();
       renderTheme();
       bindStaticEvents();
@@ -2450,6 +2458,16 @@
         : cleanValue(item.aliases)
           ? cleanValue(item.aliases).split(/[|,、]/).map((value) => value.trim()).filter(Boolean)
           : [];
+      const reading = cleanValue(
+        item.kana ||
+        item.yomi ||
+        item.reading ||
+        item.furigana ||
+        item.name_kana ||
+        item.nameKana
+      );
+      const sortSource = reading || name;
+      const sortKey = buildJapaneseSortKey(sortSource);
       const cappedValue = normalizeText(item.is_capped);
       const isCapped =
         item.is_capped === true ||
@@ -2461,7 +2479,7 @@
         : type + "::" + code + "::" + (rarity || spec) + "::" + name;
 
       const stableKey = type + "::" + hashString(stableSeed);
-      const searchValues = [name, code, rarity, spec, masterId, ...aliases].filter(Boolean);
+      const searchValues = [name, reading, code, rarity, spec, masterId, ...aliases].filter(Boolean);
 
       return {
         ...item,
@@ -2472,11 +2490,13 @@
         spec,
         id: masterId,
         aliases,
+        reading,
+        sortKey,
         is_capped: isCapped,
         sourceOrder,
         stableKey,
         legacyFavId,
-        initGroup: getInitialGroup(name),
+        initGroup: getInitialGroup(sortSource),
         imageUrl: formatImageUrl(item.img),
         search: {
           name: normalizeText(name),
@@ -2525,6 +2545,42 @@
 
     function compactText(value) {
       return normalizeText(value).replace(/[\s\-_/・･:：,，.。()[\]【】{}「」『』]/g, "");
+    }
+
+    function buildJapaneseSortKey(value) {
+      let text = cleanValue(value).normalize("NFKC").toLowerCase();
+
+      // 商品名の前に付いた管理用ラベルや記号は、五十音順の判定から除外する
+      let previous = "";
+      while (text && text !== previous) {
+        previous = text;
+        text = text
+          .replace(/^【[^】]*】\s*/, "")
+          .replace(/^\[[^\]]*\]\s*/, "")
+          .replace(/^（[^）]*）\s*/, "")
+          .replace(/^\([^)]*\)\s*/, "");
+      }
+
+      text = text
+        .replace(/^(?:psa\s*10|psa10|box)\s*[:：\-_/]?\s*/i, "")
+        .replace(/^[\s・･:：\-_/.,，。]+/, "")
+        .replace(/[ァ-ヶ]/g, (character) =>
+          String.fromCharCode(character.charCodeAt(0) - 0x60)
+        )
+        .replace(/[\s\-_/・･:：,，.。()[\]【】{}「」『』]/g, "");
+
+      return text || normalizeText(value);
+    }
+
+    function compareJapaneseNames(left, right) {
+      return (
+        JAPANESE_COLLATOR.compare(
+          left.sortKey || buildJapaneseSortKey(left.name),
+          right.sortKey || buildJapaneseSortKey(right.name)
+        ) ||
+        JAPANESE_COLLATOR.compare(left.name, right.name) ||
+        (Number(left.sourceOrder) || 0) - (Number(right.sourceOrder) || 0)
+      );
     }
 
     function buildQuery(rawQuery) {
@@ -2639,6 +2695,17 @@
       ).length;
       state.matchCounts = counts;
 
+      // 0件のカテゴリはタブに表示しないため、現在のカテゴリが0件なら
+      // 結果のある先頭カテゴリへ自動で切り替える。
+      const visibleTypes = getVisibleTabTypes();
+      if (visibleTypes.length > 0 && !visibleTypes.includes(state.currentTab)) {
+        state.currentTab = visibleTypes[0];
+        state.initialKey = "ALL";
+        state.rarityKey = "ALL";
+        applyCategoryDefaultSort(state.currentTab);
+        renderInitialBar();
+      }
+
       let rows = searchItems(getCurrentData(), query);
 
       rows = rows.filter((item) => {
@@ -2675,20 +2742,36 @@
       if (state.sortMode === "price-desc") {
         rows.sort((left, right) =>
           numericPrice(currentPriceValue(right)) - numericPrice(currentPriceValue(left)) ||
-          left.name.localeCompare(right.name, "ja")
+          compareJapaneseNames(left, right)
         );
         return;
       }
 
       if (state.sortMode === "name" || !state.query) {
-        rows.sort((left, right) => left.name.localeCompare(right.name, "ja"));
+        rows.sort(compareJapaneseNames);
       }
+    }
+
+    function getCategoryTotal(type) {
+      return type === "fav"
+        ? database.all.filter((item) => favoriteKeys.has(item.stableKey)).length
+        : (database[type] || []).length;
+    }
+
+    function getTabCount(type) {
+      return state.query
+        ? Number(state.matchCounts[type] || 0)
+        : getCategoryTotal(type);
+    }
+
+    function getVisibleTabTypes() {
+      return ["psa", "box", "sotai", "fav"].filter((type) => getTabCount(type) > 0);
     }
 
     function renderTabs() {
       const fragment = document.createDocumentFragment();
 
-      ["psa", "box", "sotai", "fav"].forEach((type) => {
+      getVisibleTabTypes().forEach((type) => {
         const button = document.createElement("button");
         button.type = "button";
         button.className = "tab-button" + (state.currentTab === type ? " active" : "");
@@ -2697,10 +2780,7 @@
         const label = document.createTextNode(TYPE_META[type].short);
         const count = document.createElement("span");
         count.className = "tab-count";
-        const total = type === "fav"
-          ? database.all.filter((item) => favoriteKeys.has(item.stableKey)).length
-          : database[type].length;
-        count.textContent = state.query ? state.matchCounts[type] : total;
+        count.textContent = getTabCount(type);
 
         button.append(label, count);
         button.addEventListener("click", () => switchTab(type));
@@ -2710,10 +2790,20 @@
       elements.tabRow.replaceChildren(fragment);
     }
 
+    function getDefaultSortMode(type) {
+      return type === "box" ? "csv" : "name";
+    }
+
+    function applyCategoryDefaultSort(type) {
+      state.sortMode = getDefaultSortMode(type);
+      elements.sortSelect.value = state.sortMode;
+    }
+
     function switchTab(type) {
       state.currentTab = type;
       state.initialKey = "ALL";
       state.rarityKey = "ALL";
+      applyCategoryDefaultSort(type);
       renderInitialBar();
       applyFilters();
     }
@@ -3380,19 +3470,18 @@
       }
     }
 
-    function getInitialGroup(name) {
-      const cleaned = cleanValue(name).replace(/^【[^】]+】/, "").trim();
-      const first = cleaned.charAt(0);
-      if (/[ぁ-おァ-オ]/.test(first)) return "A";
-      if (/[か-ごカ-ゴ]/.test(first)) return "K";
-      if (/[さ-ぞサ-ゾ]/.test(first)) return "S";
-      if (/[た-どタ-ド]/.test(first)) return "T";
-      if (/[な-のナ-ノ]/.test(first)) return "N";
-      if (/[は-ぽハ-ポ]/.test(first)) return "H";
-      if (/[ま-もマ-モ]/.test(first)) return "M";
-      if (/[ゃ-よャ-ヨ]/.test(first)) return "Y";
-      if (/[ら-ろラ-ロ]/.test(first)) return "R";
-      if (/[ゎ-んヮ-ン]/.test(first)) return "W";
+    function getInitialGroup(value) {
+      const first = buildJapaneseSortKey(value).charAt(0);
+      if (/[ぁ-お]/.test(first)) return "A";
+      if (/[か-ご]/.test(first)) return "K";
+      if (/[さ-ぞ]/.test(first)) return "S";
+      if (/[た-ど]/.test(first)) return "T";
+      if (/[な-の]/.test(first)) return "N";
+      if (/[は-ぽ]/.test(first)) return "H";
+      if (/[ま-も]/.test(first)) return "M";
+      if (/[ゃ-よ]/.test(first)) return "Y";
+      if (/[ら-ろ]/.test(first)) return "R";
+      if (/[ゎ-ん]/.test(first)) return "W";
       return "OTHER";
     }
 
@@ -3438,6 +3527,7 @@
             state.currentTab = suggestion.type;
             state.initialKey = "ALL";
             state.rarityKey = "ALL";
+            applyCategoryDefaultSort(suggestion.type);
             elements.keyword.value = suggestion.name;
             elements.clearButton.classList.add("visible");
             renderInitialBar();
