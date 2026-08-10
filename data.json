@@ -507,8 +507,8 @@
       "price_reduce": "-",
       "price_after": "¥60,000",
       "price_state": "¥57,000",
-      "price_a_minus": "",
-      "price_b": "",
+      "price_a_minus": "¥57,000",
+      "price_b": "¥54,000",
       "sort_price": 60000,
       "is_capped": true
     },
