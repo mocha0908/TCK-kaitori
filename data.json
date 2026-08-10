@@ -507,9 +507,10 @@
       "price_reduce": "-",
       "price_after": "¥63,000",
       "price_state": "¥59,800",
-      "price_a_minus": "¥59,800",
-      "price_b": "¥56,700",
-      "sort_price": 63000
+      "price_a_minus": "",
+      "price_b": "",
+      "sort_price": 63000,
+      "is_capped": true
     },
     {
       "status": "掲載",
