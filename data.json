@@ -927,14 +927,15 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/7d22b3fe-9bce-4bf0-ad3a-e9d4bd80bf42.png",
       "is_ask": false,
-      "price_max": "¥6,700",
+      "price_max": "¥6,500",
       "price_limit": "10",
       "price_reduce": "定額設定",
       "price_after": "¥6,500",
-      "price_state": "¥6,300",
-      "price_a_minus": "¥6,300",
-      "price_b": "¥6,000",
-      "sort_price": 6700
+      "price_state": "¥6,100",
+      "price_a_minus": "¥6,100",
+      "price_b": "¥5,800",
+      "sort_price": 6500,
+      "is_capped": true
     },
     {
       "status": "掲載",
