@@ -94,14 +94,14 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/761c1ee3-c079-475e-8c92-5494dea84b53.png",
       "is_ask": false,
-      "price_max": "¥19,200",
+      "price_max": "¥19,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥19,200",
-      "price_state": "¥18,200",
-      "price_a_minus": "¥18,200",
-      "price_b": "¥17,200",
-      "sort_price": 19200
+      "price_after": "¥19,000",
+      "price_state": "¥18,000",
+      "price_a_minus": "¥18,000",
+      "price_b": "¥17,100",
+      "sort_price": 19000
     },
     {
       "status": "掲載",
@@ -264,14 +264,14 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/af93fcba-25ce-4b36-a973-7ee37dfbc028.jpg",
       "is_ask": false,
-      "price_max": "¥19,200",
+      "price_max": "¥19,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥19,200",
-      "price_state": "¥18,200",
-      "price_a_minus": "¥18,200",
-      "price_b": "¥17,200",
-      "sort_price": 19200
+      "price_after": "¥19,000",
+      "price_state": "¥18,000",
+      "price_a_minus": "¥18,000",
+      "price_b": "¥17,100",
+      "sort_price": 19000
     },
     {
       "status": "掲載",
@@ -784,6 +784,23 @@
       "sort_price": 5000
     },
     {
+      "status": "超強化",
+      "id": 234835,
+      "name": "LIMITED PACK GX-ラーイエロー-(1BOX)",
+      "code": "-",
+      "spec": "未開封",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/yugioh/e0e72d26-2075-4e38-aff3-59b945da745e.png",
+      "is_ask": false,
+      "price_max": "¥4,500",
+      "price_limit": "200",
+      "price_reduce": "-",
+      "price_after": "¥4,500",
+      "price_state": "¥4,200",
+      "price_a_minus": "¥4,200",
+      "price_b": "¥4,000",
+      "sort_price": 4500
+    },
+    {
       "status": "強化",
       "id": 230183,
       "name": "LIMIT OVER COLLECTION-THE RIVALS-(1BOX)",
@@ -808,14 +825,14 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/yugioh/de972cdb-8887-4627-968d-af53519932c9.png",
       "is_ask": false,
-      "price_max": "¥7,600",
+      "price_max": "¥7,400",
       "price_limit": "50",
       "price_reduce": "-",
-      "price_after": "¥7,600",
-      "price_state": "¥7,200",
-      "price_a_minus": "¥7,200",
-      "price_b": "¥6,800",
-      "sort_price": 7600
+      "price_after": "¥7,400",
+      "price_state": "¥7,000",
+      "price_a_minus": "¥7,000",
+      "price_b": "¥6,600",
+      "sort_price": 7400
     },
     {
       "status": "掲載",
