@@ -707,13 +707,14 @@
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/yugioh/e0e72d26-2075-4e38-aff3-59b945da745e.png",
       "is_ask": false,
       "price_max": "¥3,900",
-      "price_limit": "100",
+      "price_limit": "0",
       "price_reduce": "-",
       "price_after": "¥3,900",
       "price_state": "¥3,700",
       "price_a_minus": "¥3,700",
       "price_b": "¥3,500",
-      "sort_price": 3900
+      "sort_price": 3900,
+      "is_capped": true
     },
     {
       "status": "掲載",
