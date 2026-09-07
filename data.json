@@ -1542,25 +1542,25 @@
       "name": "イーブイex 【SAR】{223/187}[SV8a]",
       "code": "223/187",
       "rarity": "SAR",
-      "price_a": "¥4,200",
+      "price_a": "¥3,600",
       "price_a_minus": "¥2,800",
       "price_b": "",
       "price_state": "",
       "price_rush": "¥4,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/62024.webp",
-      "sort_price": 4200
+      "sort_price": 3600
     },
     {
       "name": "イーブイex 【SAR】{224/187}[SV8a]",
       "code": "224/187",
       "rarity": "SAR",
-      "price_a": "¥4,200",
+      "price_a": "¥3,600",
       "price_a_minus": "¥2,800",
       "price_b": "",
       "price_state": "",
       "price_rush": "¥4,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/62025.webp",
-      "sort_price": 4200
+      "sort_price": 3600
     },
     {
       "name": "イルカマンex 【SAR】{207/187}[SV8a]",
@@ -1590,37 +1590,37 @@
       "name": "グレイシアex 【SAR】{206/187}[SV8a]",
       "code": "206/187",
       "rarity": "SAR",
-      "price_a": "¥6,300",
+      "price_a": "¥5,400",
       "price_a_minus": "¥4,200",
       "price_b": "",
       "price_state": "",
       "price_rush": "¥6,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/62007.webp",
-      "sort_price": 6300
+      "sort_price": 5400
     },
     {
       "name": "サンダースex 【SAR】{209/187}[SV8a]",
       "code": "209/187",
       "rarity": "SAR",
-      "price_a": "¥6,300",
+      "price_a": "¥5,400",
       "price_a_minus": "¥4,200",
       "price_b": "",
       "price_state": "",
       "price_rush": "¥6,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/62010.webp",
-      "sort_price": 6300
+      "sort_price": 5400
     },
     {
       "name": "シャワーズex 【SAR】{205/187}[SV8a]",
       "code": "205/187",
       "rarity": "SAR",
-      "price_a": "¥6,800",
-      "price_a_minus": "¥4,500",
+      "price_a": "¥6,500",
+      "price_a_minus": "¥4,200",
       "price_b": "",
       "price_state": "",
       "price_rush": "¥6,500",
       "img": "https://files.cardrush.media/pokemon/ocha_products/62006.webp",
-      "sort_price": 6800
+      "sort_price": 6500
     },
     {
       "name": "ソウブレイズex 【SAR】{203/187}[SV8a]",
@@ -1663,7 +1663,7 @@
       "code": "212/187",
       "rarity": "SAR",
       "price_a": "¥15,000",
-      "price_a_minus": "¥9,700",
+      "price_a_minus": "¥10,000",
       "price_b": "",
       "price_state": "",
       "price_rush": "¥15,000",
@@ -1674,13 +1674,13 @@
       "name": "ブースターex 【SAR】{202/187}[SV8a]",
       "code": "202/187",
       "rarity": "SAR",
-      "price_a": "¥6,300",
+      "price_a": "¥5,400",
       "price_a_minus": "¥4,200",
       "price_b": "",
       "price_state": "",
       "price_rush": "¥6,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/62003.webp",
-      "sort_price": 6300
+      "sort_price": 5400
     },
     {
       "name": "ブラッキーex 【SAR】{217/187}[SV8a]",
@@ -1698,13 +1698,13 @@
       "name": "リーフィアex 【SAR】{200/187}[SV8a]",
       "code": "200/187",
       "rarity": "SAR",
-      "price_a": "¥7,800",
-      "price_a_minus": "¥5,200",
+      "price_a": "¥7,500",
+      "price_a_minus": "¥4,800",
       "price_b": "",
       "price_state": "",
       "price_rush": "¥7,500",
       "img": "https://files.cardrush.media/pokemon/ocha_products/62001.webp",
-      "sort_price": 7800
+      "sort_price": 7500
     },
     {
       "name": "Nのゾロアークex 【SAR】{127/100}[SV9]",
