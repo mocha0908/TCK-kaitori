@@ -4746,13 +4746,13 @@
       "name": "セグレイブ 【AR】{077/071}[SV2P]",
       "code": "077/071",
       "rarity": "AR",
-      "price_a": "¥6,600",
-      "price_a_minus": "¥4,600",
+      "price_a": "¥600",
+      "price_a_minus": "¥400",
       "price_b": "",
       "price_state": "",
       "price_rush": "¥6,600",
       "img": "https://files.cardrush.media/pokemon/ocha_products/41811.webp",
-      "sort_price": 6600
+      "sort_price": 600
     },
     {
       "name": "セゴール 【AR】{076/071}[SV2P]",
