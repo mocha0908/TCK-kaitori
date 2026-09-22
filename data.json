@@ -9,14 +9,14 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/4c0609c5-8818-4d94-bc41-63eba64d8cc3.png",
       "is_ask": false,
-      "price_max": "¥29,000",
+      "price_max": "¥30,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥29,000",
-      "price_state": "¥27,500",
-      "price_a_minus": "¥27,500",
-      "price_b": "¥26,100",
-      "sort_price": 29000
+      "price_after": "¥30,000",
+      "price_state": "¥28,500",
+      "price_a_minus": "¥28,500",
+      "price_b": "¥27,000",
+      "sort_price": 30000
     },
     {
       "status": "掲載",
@@ -26,14 +26,14 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/HQhd2uaSDXkUKxq1d4TxvnGKt3mYoNtkNNMsaqYm.png",
       "is_ask": false,
-      "price_max": "¥22,000",
+      "price_max": "¥24,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥22,000",
-      "price_state": "¥20,900",
-      "price_a_minus": "¥20,900",
-      "price_b": "¥19,800",
-      "sort_price": 22000
+      "price_after": "¥24,000",
+      "price_state": "¥22,800",
+      "price_a_minus": "¥22,800",
+      "price_b": "¥21,600",
+      "sort_price": 24000
     },
     {
       "status": "掲載",
@@ -859,14 +859,15 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/c1080417-ec41-4498-aad0-fcd116e18036.png",
       "is_ask": false,
-      "price_max": "¥7,500",
+      "price_max": "¥0",
       "price_limit": "10",
       "price_reduce": "定額設定",
       "price_after": "¥7,000",
-      "price_state": "¥7,100",
-      "price_a_minus": "¥7,100",
-      "price_b": "¥6,700",
-      "sort_price": 7500
+      "price_state": "#VALUE!",
+      "price_a_minus": "#VALUE!",
+      "price_b": "#VALUE!",
+      "sort_price": 0,
+      "is_capped": true
     },
     {
       "status": "掲載",
