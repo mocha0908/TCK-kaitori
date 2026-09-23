@@ -9,14 +9,14 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/4c0609c5-8818-4d94-bc41-63eba64d8cc3.png",
       "is_ask": false,
-      "price_max": "¥30,000",
+      "price_max": "¥29,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥30,000",
-      "price_state": "¥28,500",
-      "price_a_minus": "¥28,500",
-      "price_b": "¥27,000",
-      "sort_price": 30000
+      "price_after": "¥29,000",
+      "price_state": "¥27,500",
+      "price_a_minus": "¥27,500",
+      "price_b": "¥26,100",
+      "sort_price": 29000
     },
     {
       "status": "掲載",
@@ -26,14 +26,14 @@
       "spec": "未開封",
       "img": "https://production-recore-public-files.s3.ap-northeast-1.amazonaws.com/HQhd2uaSDXkUKxq1d4TxvnGKt3mYoNtkNNMsaqYm.png",
       "is_ask": false,
-      "price_max": "¥24,000",
+      "price_max": "¥23,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥24,000",
-      "price_state": "¥22,800",
-      "price_a_minus": "¥22,800",
-      "price_b": "¥21,600",
-      "sort_price": 24000
+      "price_after": "¥23,000",
+      "price_state": "¥21,800",
+      "price_a_minus": "¥21,800",
+      "price_b": "¥20,700",
+      "sort_price": 23000
     },
     {
       "status": "掲載",
@@ -60,14 +60,14 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/9d1ffcee-843d-4d45-8943-3ba1e9e89fd7.png",
       "is_ask": false,
-      "price_max": "¥70,000",
-      "price_limit": "5",
+      "price_max": "¥72,000",
+      "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥70,000",
-      "price_state": "¥66,500",
-      "price_a_minus": "¥66,500",
-      "price_b": "¥63,000",
-      "sort_price": 70000
+      "price_after": "¥72,000",
+      "price_state": "¥68,400",
+      "price_a_minus": "¥68,400",
+      "price_b": "¥64,800",
+      "sort_price": 72000
     },
     {
       "status": "掲載",
@@ -77,14 +77,14 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/c35f41b7-1b28-483a-b382-abb6a0b1734f.png",
       "is_ask": false,
-      "price_max": "¥11,500",
+      "price_max": "¥11,400",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥11,500",
-      "price_state": "¥10,900",
-      "price_a_minus": "¥10,900",
-      "price_b": "¥10,300",
-      "sort_price": 11500
+      "price_after": "¥11,400",
+      "price_state": "¥10,800",
+      "price_a_minus": "¥10,800",
+      "price_b": "¥10,200",
+      "sort_price": 11400
     },
     {
       "status": "掲載",
@@ -782,23 +782,6 @@
       "price_a_minus": "¥8,000",
       "price_b": "¥7,600",
       "sort_price": 8500
-    },
-    {
-      "status": "掲載",
-      "id": 211521,
-      "name": "QUARTER CENTURY ART COLLECTION(1BOX)",
-      "code": "-",
-      "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/yugioh/e50b8e2c-0cc9-43b0-be22-333ef543693a.jpg",
-      "is_ask": false,
-      "price_max": "¥5,900",
-      "price_limit": "50",
-      "price_reduce": "-",
-      "price_after": "¥5,900",
-      "price_state": "¥5,600",
-      "price_a_minus": "¥5,600",
-      "price_b": "¥5,300",
-      "sort_price": 5900
     },
     {
       "status": "掲載",
