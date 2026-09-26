@@ -49023,18 +49023,6 @@
       "sort_price": 20000
     },
     {
-      "name": "レックウザVMAX 【UR】{284/184}[S8b]",
-      "code": "284/184",
-      "rarity": "UR",
-      "price_a": "¥20,000",
-      "price_a_minus": "¥13,000",
-      "price_b": "",
-      "price_state": "",
-      "price_rush": "¥20,000",
-      "img": "https://files.cardrush.media/pokemon/ocha_products/23060.webp",
-      "sort_price": 20000
-    },
-    {
       "name": "カビゴン 【UR】{093/070}[S5a]",
       "code": "093/070",
       "rarity": "UR",
@@ -50424,6 +50412,18 @@
       "price_state": "",
       "price_rush": "¥10,000",
       "img": "https://files.cardrush.media/pokemon/ocha_products/4408.webp",
+      "sort_price": 10000
+    },
+    {
+      "name": "レックウザVMAX 【UR】{284/184}[S8b]",
+      "code": "284/184",
+      "rarity": "UR",
+      "price_a": "¥10,000",
+      "price_a_minus": "¥6,500",
+      "price_b": "",
+      "price_state": "",
+      "price_rush": "¥10,000",
+      "img": "https://files.cardrush.media/pokemon/ocha_products/23060.webp",
       "sort_price": 10000
     },
     {
