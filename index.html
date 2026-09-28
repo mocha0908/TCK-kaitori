@@ -3211,13 +3211,16 @@
       const container = document.createElement("div");
       container.className = "sub-prices";
 
-      // 状態A-または状態Bが設定されている場合は、状態減額価格を重複表示しない
+      // 状態A-、状態Bまたは状態Cが設定されている場合は、状態減額価格を重複表示しない
       const hasDetailedStatePrice =
-        hasValue(item.price_a_minus) || hasValue(item.price_b);
+        hasValue(item.price_a_minus) ||
+        hasValue(item.price_b) ||
+        hasValue(item.price_c);
 
       if (item.type === "sotai") {
         appendSubPrice(container, "状態A-", item.price_a_minus, false, true);
         appendSubPrice(container, "状態B", item.price_b, false, true);
+        appendSubPrice(container, "状態C", item.price_c, false, true);
         if (!hasDetailedStatePrice) {
           appendSubPrice(container, "状態減額価格", item.price_state, false, true);
         }
@@ -3225,6 +3228,7 @@
       } else {
         appendSubPrice(container, "状態A-", item.price_a_minus, false, true);
         appendSubPrice(container, "状態B", item.price_b, false, true);
+        appendSubPrice(container, "状態C", item.price_c, false, true);
         if (!hasDetailedStatePrice) {
           appendSubPrice(container, "状態減額価格", item.price_state, false, true);
         }
@@ -3285,11 +3289,14 @@
     function appendTableDetails(cell, item) {
       // 状態A-または状態Bが設定されている場合は、状態減額価格を重複表示しない
       const hasDetailedStatePrice =
-        hasValue(item.price_a_minus) || hasValue(item.price_b);
+        hasValue(item.price_a_minus) ||
+        hasValue(item.price_b) ||
+        hasValue(item.price_c);
 
       if (item.type === "sotai") {
         appendDetailLine(cell, "状態A-", item.price_a_minus, true, true);
         appendDetailLine(cell, "状態B", item.price_b, true, true);
+        appendDetailLine(cell, "状態C", item.price_c, true, true);
         if (!hasDetailedStatePrice) {
           appendDetailLine(cell, "状態減額価格", item.price_state, true, true);
         }
@@ -3299,6 +3306,7 @@
 
       appendDetailLine(cell, "状態A-", item.price_a_minus, true, true);
       appendDetailLine(cell, "状態B", item.price_b, true, true);
+        appendDetailLine(cell, "状態C", item.price_c, true, true);
       if (!hasDetailedStatePrice) {
         appendDetailLine(cell, "状態減額価格", item.price_state, true, true);
       }
