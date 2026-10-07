@@ -3,24 +3,6 @@
   "box": [
     {
       "status": "掲載",
-      "id": 235718,
-      "name": "30th CELEBRATION 30周年 セレブレーション(1BOX)",
-      "code": "",
-      "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/4c0609c5-8818-4d94-bc41-63eba64d8cc3.png",
-      "is_ask": false,
-      "price_max": "¥25,600",
-      "price_limit": "100",
-      "price_reduce": "-",
-      "price_after": "¥25,600",
-      "price_state": "¥23,000",
-      "price_a_minus": "¥23,000",
-      "price_b": "¥20,400",
-      "price_c": "¥17,900",
-      "sort_price": 25600
-    },
-    {
-      "status": "掲載",
       "id": 235730,
       "name": "30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー",
       "code": "",
@@ -36,24 +18,6 @@
       "price_b": "¥15,600",
       "price_c": "¥13,600",
       "sort_price": 19500
-    },
-    {
-      "status": "掲載",
-      "id": 235731,
-      "name": "30th CELEBRATION FUTURISTIC BOX",
-      "code": "",
-      "spec": "未開封",
-      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/9d1ffcee-843d-4d45-8943-3ba1e9e89fd7.png",
-      "is_ask": false,
-      "price_max": "¥59,800",
-      "price_limit": "10",
-      "price_reduce": "-",
-      "price_after": "¥59,800",
-      "price_state": "¥53,800",
-      "price_a_minus": "¥53,800",
-      "price_b": "¥47,800",
-      "price_c": "¥41,800",
-      "sort_price": 59800
     },
     {
       "status": "掲載",
