@@ -38172,40 +38172,40 @@
       "name": "ゲッコウガex 30th【SAR】{125/103}[M6a]",
       "code": "125/103",
       "rarity": "SAR",
-      "price_a": "¥1,800",
+      "price_a": "¥1,500",
       "price_a_minus": "¥1,100",
       "price_b": "",
       "price_c": "",
       "price_state": "",
       "price_rush": "¥1,600",
       "img": "https://files.cardrush.media/pokemon/ocha_products/36374.webp",
-      "sort_price": 1800
+      "sort_price": 1500
     },
     {
       "name": "ボーマンダex 30th【SAR】{133/103}[M6a]",
       "code": "133/103",
       "rarity": "SAR",
-      "price_a": "¥1,800",
+      "price_a": "¥1,300",
       "price_a_minus": "¥900",
       "price_b": "",
       "price_c": "",
       "price_state": "",
       "price_rush": "¥1,300",
       "img": "https://files.cardrush.media/pokemon/ocha_products/33702.webp",
-      "sort_price": 1800
+      "sort_price": 1300
     },
     {
       "name": "ホゲータex 30th【SAR】{124/103}[M6a]",
       "code": "124/103",
       "rarity": "SAR",
-      "price_a": "¥1,800",
+      "price_a": "¥1,300",
       "price_a_minus": "¥900",
       "price_b": "",
       "price_c": "",
       "price_state": "",
       "price_rush": "¥1,300",
       "img": "https://files.cardrush.media/pokemon/ocha_products/33711.webp",
-      "sort_price": 1800
+      "sort_price": 1300
     },
     {
       "name": "ミュウex 【SR】{195/165}[SV2a]",
