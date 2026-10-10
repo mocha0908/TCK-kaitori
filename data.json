@@ -200,16 +200,17 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/mtg/af3b28f7-1e86-4dc9-89e7-327f30421965.jpg",
       "is_ask": false,
-      "price_max": "¥242,200",
+      "price_max": "¥0",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥242,200",
-      "price_state": "¥217,000",
-      "price_a_minus": "¥217,000",
-      "price_b": "¥193,000",
+      "price_after": "¥0",
+      "price_state": "¥0",
+      "price_a_minus": "¥0",
+      "price_b": "¥0",
       "price_c": "¥169,000",
       "price_d": "",
-      "sort_price": 242200
+      "sort_price": 0,
+      "is_capped": true
     },
     {
       "status": "掲載",
