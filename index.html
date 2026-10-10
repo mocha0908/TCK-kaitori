@@ -3358,8 +3358,13 @@
         item.rule ??
         item.condition_rule
       );
-      const standardRegulation = /^[A-J]$/.test(regulation);
-      return item.type === "sotai" && Boolean(regulation) && !standardRegulation;
+      const standardRegulation = /^[A-Z]$/.test(regulation);
+      const isSpecialReduction = regulation === "P";
+      return (
+        item.type === "sotai" &&
+        Boolean(regulation) &&
+        (isSpecialReduction || !standardRegulation)
+      );
     }
 
     function getStatus(item) {
