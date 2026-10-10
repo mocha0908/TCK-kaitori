@@ -952,6 +952,14 @@
       color: var(--danger);
     }
 
+    .badge.regulation-alert {
+      border: 1px solid var(--danger-border);
+      background: var(--danger);
+      color: #ffffff;
+      font-size: 0.6875rem;
+      box-shadow: 0 2px 6px rgba(180, 35, 24, 0.25);
+    }
+
     .badge.neutral {
       background: var(--neutral-soft);
       color: var(--control-text);
@@ -2958,6 +2966,9 @@
       const badges = document.createElement("div");
       badges.className = "badge-row";
       badges.appendChild(createBadge(TYPE_META[item.type].short, "category"));
+      if (hasBigStateReduction(item)) {
+        badges.appendChild(createBadge("⚠ 状態減額大", "regulation-alert"));
+      }
       const status = getStatus(item);
       badges.appendChild(createBadge(status.label, status.tone));
       if (item.is_capped) badges.appendChild(createBadge("価格変動／終了", "warning"));
@@ -3031,6 +3042,10 @@
       const statusCell = document.createElement("td");
       const status = getStatus(item);
       statusCell.appendChild(createBadge(status.label, status.tone));
+      if (hasBigStateReduction(item)) {
+        statusCell.appendChild(document.createElement("br"));
+        statusCell.appendChild(createBadge("⚠ 状態減額大", "regulation-alert"));
+      }
       if (item.is_capped) {
         statusCell.appendChild(document.createElement("br"));
         statusCell.appendChild(createBadge("価格変動／終了", "warning"));
@@ -3334,6 +3349,16 @@
         );
       }
       cell.appendChild(line);
+    }
+
+    function hasBigStateReduction(item) {
+      const regulation = cleanValue(
+        item.regulation ??
+        item["レギュレーション"] ??
+        item.rule ??
+        item.condition_rule
+      );
+      return item.type === "sotai" && regulation === "状態減額大";
     }
 
     function getStatus(item) {
