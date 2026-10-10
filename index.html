@@ -3358,7 +3358,8 @@
         item.rule ??
         item.condition_rule
       );
-      return item.type === "sotai" && regulation === "状態減額大";
+      const standardRegulation = /^[A-J]$/.test(regulation);
+      return item.type === "sotai" && Boolean(regulation) && !standardRegulation;
     }
 
     function getStatus(item) {
