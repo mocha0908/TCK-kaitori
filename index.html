@@ -1850,7 +1850,20 @@
         transition-duration: 0.01ms !important;
       }
     }
-  </style>
+  
+    .guarantee-panel { margin:0 0 14px; border:1px solid var(--border); border-radius:var(--radius); background:var(--surface); box-shadow:var(--shadow-sm); overflow:hidden }
+    .guarantee-panel[hidden] { display:none }
+    .guarantee-panel summary { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:48px; padding:12px 14px; color:var(--text); font-size:.875rem; font-weight:800; cursor:pointer; list-style:none }
+    .guarantee-panel summary::-webkit-details-marker { display:none }
+    .guarantee-panel summary::after { content:"＋"; color:var(--primary); font-size:1rem }
+    .guarantee-panel[open] summary::after { content:"−" }
+    .guarantee-caption { margin-left:auto; color:var(--text-sub); font-size:.6875rem; font-weight:700 }
+    .guarantee-images { display:grid; gap:14px; padding:0 12px 12px }
+    .guarantee-image-card { margin:0; text-align:center }
+    .guarantee-image-card figcaption { margin:0 auto 6px; color:var(--text-sub); font-size:.75rem; font-weight:800 }
+    .guarantee-image-card img { display:block; width:min(100%,680px); height:auto; margin:0 auto; border:1px solid var(--border); border-radius:var(--radius-sm) }
+    .guarantee-image-card.portrait img { width:min(100%,500px) }
+</style>
 </head>
 <body>
   <a class="skip-link" href="#results">検索結果へ移動</a>
@@ -1916,6 +1929,19 @@
   </section>
 
   <main class="page-main" id="results">
+    <details class="guarantee-panel" id="guaranteePanel" hidden>
+      <summary><span>最低保証買取表を見る</span><span class="guarantee-caption">2種類</span></summary>
+      <div class="guarantee-images">
+        <figure class="guarantee-image-card">
+          <figcaption>AR／CHR・SAR 最低保証買取</figcaption>
+          <img src="./assets/minimum-guarantee-ar-chr-sar.webp" alt="AR・CHR 230円、SAR 700円の最低保証買取案内" loading="lazy" decoding="async">
+        </figure>
+        <figure class="guarantee-image-card portrait">
+          <figcaption>ポケモンカード最低買取保証表（10/11更新）</figcaption>
+          <img src="./assets/minimum-guarantee-1011.webp" alt="旧弾、151、30thなどのポケモンカード最低買取保証表" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </details>
     <div class="toolbar">
       <div class="other-matches" id="otherMatches" aria-live="polite"></div>
 
@@ -2121,7 +2147,7 @@
         "themeColorMeta", "themeToggle", "themeIcon", "themeLabel",
         "freshnessCard", "dataUpdatedAt", "freshnessNote", "refreshButton",
         "searchShell", "searchForm", "keyword", "clearButton", "historyRow", "tabRow",
-        "otherMatches", "initialBar", "rarityBlock", "rarityBar",
+        "otherMatches", "guaranteePanel", "initialBar", "rarityBlock", "rarityBar",
         "hitCount", "activeFilterCopy", "listViewButton", "tileViewButton",
         "sortSelect", "noticeBanner",
         "noticeText", "noticeRetry", "loader", "resultArea", "cardList",
@@ -2713,6 +2739,8 @@
         applyCategoryDefaultSort(state.currentTab);
         renderInitialBar();
       }
+
+      elements.guaranteePanel.hidden = state.currentTab !== "sotai";
 
       let rows = searchItems(getCurrentData(), query);
 
