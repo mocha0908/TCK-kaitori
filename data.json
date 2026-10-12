@@ -54,8 +54,8 @@
       "price_state": "¥54,000",
       "price_a_minus": "¥54,000",
       "price_b": "¥48,000",
-      "price_c": "¥44,000",
-      "price_d": "¥37,000",
+      "price_c": "¥42,000",
+      "price_d": "¥36,000",
       "sort_price": 60000,
       "is_capped": true
     },
@@ -321,8 +321,8 @@
       "price_state": "¥0",
       "price_a_minus": "¥0",
       "price_b": "¥0",
-      "price_c": "¥5,000",
-      "price_d": "¥4,000",
+      "price_c": "¥0",
+      "price_d": "¥0",
       "sort_price": 0,
       "is_capped": true
     },
@@ -341,8 +341,8 @@
       "price_state": "¥0",
       "price_a_minus": "¥0",
       "price_b": "¥0",
-      "price_c": "¥4,000",
-      "price_d": "¥3,000",
+      "price_c": "¥0",
+      "price_d": "¥0",
       "sort_price": 0,
       "is_capped": true
     },
