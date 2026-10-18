@@ -810,16 +810,17 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/d9294d74-4b04-4544-9b4f-9bb55c00b195.png",
       "is_ask": false,
-      "price_max": "¥20,000",
+      "price_max": "¥19,000",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥20,000",
-      "price_state": "¥19,000",
-      "price_a_minus": "¥19,000",
-      "price_b": "¥16,000",
-      "price_c": "¥14,000",
-      "price_d": "¥12,000",
-      "sort_price": 20000
+      "price_after": "¥19,000",
+      "price_state": "¥18,000",
+      "price_a_minus": "¥18,000",
+      "price_b": "¥15,000",
+      "price_c": "¥13,000",
+      "price_d": "¥11,000",
+      "sort_price": 19000,
+      "is_capped": true
     }
   ],
   "sotai": [
