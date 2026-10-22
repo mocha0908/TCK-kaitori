@@ -1016,17 +1016,16 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/duel_masters/7d22b3fe-9bce-4bf0-ad3a-e9d4bd80bf42.png",
       "is_ask": false,
-      "price_max": "¥0",
+      "price_max": "¥6,000",
       "price_limit": "10",
       "price_reduce": "定額設定",
       "price_after": "¥0",
-      "price_state": "¥0",
-      "price_a_minus": "¥0",
-      "price_b": "¥0",
-      "price_c": "¥0",
-      "price_d": "¥0",
-      "sort_price": 0,
-      "is_capped": true
+      "price_state": "¥5,700",
+      "price_a_minus": "¥5,700",
+      "price_b": "¥4,000",
+      "price_c": "¥4,000",
+      "price_d": "¥3,000",
+      "sort_price": 6000
     }
   ],
   "sotai": []
