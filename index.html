@@ -903,6 +903,31 @@
       border-color: var(--capped-border);
     }
 
+    .result-card.boosted {
+      border: 2px solid #f04438;
+      box-shadow: 0 0 0 3px rgba(240, 68, 56, 0.14),
+        0 8px 24px rgba(240, 68, 56, 0.18);
+    }
+
+    .result-card.boosted .card-topline {
+      background: linear-gradient(
+        110deg,
+        rgba(255, 214, 102, 0.55),
+        rgba(255, 145, 77, 0.28),
+        rgba(240, 68, 56, 0.12)
+      );
+      border-bottom-color: rgba(240, 68, 56, 0.45);
+    }
+
+    .result-card.boosted .current-price-panel {
+      border: 2px solid #f04438;
+      background: linear-gradient(120deg, rgba(255, 214, 102, 0.28), rgba(240, 68, 56, 0.08));
+    }
+
+    .result-card.boosted .price-copy {
+      color: #b42318;
+    }
+
     .card-topline {
       border-bottom: 1px solid var(--border);
       background: var(--surface-soft);
@@ -958,6 +983,16 @@
       color: #ffffff;
       font-size: 0.6875rem;
       box-shadow: 0 2px 6px rgba(180, 35, 24, 0.25);
+    }
+
+    .badge.boosted {
+      min-height: 25px;
+      border: 1px solid #b42318;
+      background: linear-gradient(105deg, #b42318, #f04438 58%, #f79009);
+      color: #ffffff;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      box-shadow: 0 2px 8px rgba(180, 35, 24, 0.34);
     }
 
     .badge.neutral {
@@ -1260,6 +1295,15 @@
 
     tbody tr.capped td {
       background: var(--capped-row);
+    }
+
+    tbody tr.boosted td {
+      background: rgba(240, 68, 56, 0.09);
+    }
+
+    tbody tr.boosted td:nth-child(6) {
+      box-shadow: inset 0 1px 0 rgba(240, 68, 56, 0.42),
+        inset 0 -1px 0 rgba(240, 68, 56, 0.42);
     }
 
     .favorite-cell {
@@ -2506,6 +2550,10 @@
       const isCapped =
         item.is_capped === true ||
         ["true", "1", "yes", "on", "上限", "到達"].includes(cappedValue);
+      const boostedValue = String(item.is_boosted ?? "").trim().toLowerCase();
+      const isBoosted =
+        item.is_boosted === true ||
+        ["true", "1", "yes", "on"].includes(boostedValue);
 
       const legacyFavId = name + "::" + code + "::" + (rarity || spec || defaultSpec);
       const stableSeed = masterId
@@ -2527,6 +2575,7 @@
         reading,
         sortKey,
         is_capped: isCapped,
+        is_boosted: isBoosted,
         sourceOrder,
         stableKey,
         legacyFavId,
@@ -2986,7 +3035,10 @@
 
     function createCard(item) {
       const card = document.createElement("article");
-      card.className = "result-card" + (item.is_capped ? " capped" : "");
+      card.className =
+        "result-card" +
+        (item.is_capped ? " capped" : "") +
+        (item.is_boosted ? " boosted" : "");
 
       const topLine = document.createElement("div");
       topLine.className = "card-topline";
@@ -2994,6 +3046,9 @@
       const badges = document.createElement("div");
       badges.className = "badge-row";
       badges.appendChild(createBadge(TYPE_META[item.type].short, "category"));
+      if (item.is_boosted) {
+        badges.appendChild(createBadge("🔥 強化買取", "boosted"));
+      }
       if (hasBigStateReduction(item)) {
         badges.appendChild(createBadge("⚠ 状態減額大", "regulation-alert"));
       }
@@ -3059,6 +3114,7 @@
     function createTableRow(item) {
       const row = document.createElement("tr");
       if (item.is_capped) row.classList.add("capped");
+      if (item.is_boosted) row.classList.add("boosted");
 
       const favoriteCell = document.createElement("td");
       favoriteCell.className = "favorite-cell";
@@ -3068,6 +3124,10 @@
       categoryCell.appendChild(createBadge(TYPE_META[item.type].short, "category"));
 
       const statusCell = document.createElement("td");
+      if (item.is_boosted) {
+        statusCell.appendChild(createBadge("🔥 強化買取", "boosted"));
+        statusCell.appendChild(document.createElement("br"));
+      }
       const status = getStatus(item);
       statusCell.appendChild(createBadge(status.label, status.tone));
       if (hasBigStateReduction(item)) {
