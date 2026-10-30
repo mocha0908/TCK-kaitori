@@ -2504,18 +2504,27 @@
       return Number.isNaN(parsed.getTime()) ? null : parsed;
     }
 
+    function hasListingGroup(item) {
+      const value = item && (
+        item.listing_group ??
+        item.listingGroup ??
+        item["掲載グループ"]
+      );
+      return value !== null && value !== undefined && String(value).trim() !== "";
+    }
+
     function hydrateDatabase(payload) {
       const psaRows = payload.psa || [];
       const boxRows = payload.box || [];
       const sotaiRows = payload.sotai || [];
 
       // JSONへ書き出された順番＝スプレッドシート（CSV）の並び順として保持する
-      database.psa = psaRows.map((item, index) =>
-        formatItem(item, "psa", "PSA10", index)
-      );
-      database.box = boxRows.map((item, index) =>
-        formatItem(item, "box", "BOX", psaRows.length + index)
-      );
+      database.psa = psaRows
+        .filter(hasListingGroup)
+        .map((item, index) => formatItem(item, "psa", "PSA10", index));
+      database.box = boxRows
+        .filter(hasListingGroup)
+        .map((item, index) => formatItem(item, "box", "BOX", psaRows.length + index));
       database.sotai = sotaiRows.map((item, index) =>
         formatItem(item, "sotai", "", psaRows.length + boxRows.length + index)
       );
