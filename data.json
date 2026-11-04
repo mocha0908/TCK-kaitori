@@ -1218,6 +1218,27 @@
       "price_d": "¥5,000",
       "sort_price": 9900,
       "is_boosted": false
+    },
+    {
+      "status": "掲載",
+      "listing_group": "3",
+      "id": 0,
+      "name": "30th CELEBRATION FUTURISTIC BOX",
+      "code": "",
+      "spec": "未開封",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/9d1ffcee-843d-4d45-8943-3ba1e9e89fd7.png",
+      "is_ask": false,
+      "price_max": "¥53,000",
+      "price_limit": "4",
+      "price_reduce": "-",
+      "price_after": "¥53,000",
+      "price_state": "¥50,300",
+      "price_a_minus": "¥50,300",
+      "price_b": "¥42,000",
+      "price_c": "¥37,000",
+      "price_d": "¥31,000",
+      "sort_price": 53000,
+      "is_capped": true
     }
   ],
   "sotai": [
