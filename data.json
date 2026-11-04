@@ -1234,9 +1234,9 @@
       "price_after": "¥53,000",
       "price_state": "¥50,300",
       "price_a_minus": "¥50,300",
-      "price_b": "¥42,000",
-      "price_c": "¥37,000",
-      "price_d": "¥31,000",
+      "price_b": "",
+      "price_c": "",
+      "price_d": "",
       "sort_price": 53000,
       "is_capped": true
     }
