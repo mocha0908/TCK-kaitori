@@ -14,13 +14,14 @@
       "price_limit": "50",
       "price_reduce": "-",
       "price_after": "¥21,500",
-      "price_state": "",
+      "price_state": "¥20,400",
       "price_a_minus": "¥20,400",
       "price_b": "¥17,000",
       "price_c": "¥15,000",
       "price_d": "¥12,000",
       "sort_price": 21500,
-      "is_boosted": false
+      "is_boosted": false,
+      "is_capped": true
     },
     {
       "status": "掲載",
