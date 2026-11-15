@@ -1972,8 +1972,8 @@
       "price_state": "¥45,900",
       "price_a_minus": "¥45,900",
       "price_b": "¥40,000",
-      "price_c": "¥35,000",
-      "price_d": "¥30,000",
+      "price_c": "",
+      "price_d": "",
       "sort_price": 51000,
       "is_capped": true
     }
