@@ -10,17 +10,18 @@
       "spec": "未開封",
       "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/9d1ffcee-843d-4d45-8943-3ba1e9e89fd7.png",
       "is_ask": false,
-      "price_max": "¥53,100",
+      "price_max": "¥0",
       "price_limit": "-",
       "price_reduce": "-",
-      "price_after": "¥53,100",
+      "price_after": "¥0",
       "price_state": "",
       "price_a_minus": "¥47,700",
       "price_b": "¥42,000",
       "price_c": "¥37,000",
       "price_d": "¥31,000",
-      "sort_price": 53100,
-      "is_boosted": false
+      "sort_price": 0,
+      "is_boosted": false,
+      "is_capped": true
     },
     {
       "status": "掲載",
