@@ -12394,6 +12394,27 @@
       "price_d": "¥6,000",
       "sort_price": 11300,
       "is_capped": true
+    },
+    {
+      "status": "掲載",
+      "listing_group": "3",
+      "id": "",
+      "name": "スカイレジェンド",
+      "code": "sm10",
+      "spec": "",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/edd0ad65-fbff-4341-bad0-cc27d3d5d8cc.jpg",
+      "is_ask": false,
+      "price_max": "¥0",
+      "price_limit": "-",
+      "price_reduce": "-",
+      "price_after": "¥0",
+      "price_state": "¥0",
+      "price_a_minus": "¥0",
+      "price_b": "¥0",
+      "price_c": "¥0",
+      "price_d": "¥0",
+      "sort_price": 0,
+      "is_capped": true
     }
   ],
   "sotai": [
