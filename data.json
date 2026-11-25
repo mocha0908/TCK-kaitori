@@ -12415,6 +12415,27 @@
       "price_d": "¥0",
       "sort_price": 0,
       "is_capped": true
+    },
+    {
+      "status": "掲載",
+      "listing_group": "1",
+      "id": "",
+      "name": "サイバージャッジ",
+      "code": "sv5K",
+      "spec": "",
+      "img": "https://japan-toreca.s3.ap-northeast-1.amazonaws.com/images/pokemon/117b3302-e74f-49eb-a866-667189678f37.jpg",
+      "is_ask": false,
+      "price_max": "¥0",
+      "price_limit": "-",
+      "price_reduce": "-",
+      "price_after": "¥0",
+      "price_state": "¥0",
+      "price_a_minus": "¥0",
+      "price_b": "¥0",
+      "price_c": "¥0",
+      "price_d": "¥0",
+      "sort_price": 0,
+      "is_capped": true
     }
   ],
   "sotai": [
